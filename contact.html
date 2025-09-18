@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - YouthHIVAware</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #0d9488, transparent);
+            border-radius: 3px;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <nav class="bg-teal-700 text-white shadow-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="/Youth-HIV-Awareness.html">
+                              <i class="fas fa-ribbon text-2xl mr-2 text-teal-200"></i>
+                        <span class="font-bold text-xl">YouthHIVwaAre</span>
+
+                        </a>
+                      
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="/Youth-HIV-Awareness.html" class="py-2 px-3 nav-hover font-medium">Home</a>
+                        <a href="/purpose.html" class="py-2 px-3 nav-hover font-medium"> Our Purpose</a>
+                        <a href="/partner.html" class="py-2 px-3 nav-hover font-medium">Our Partners</a>
+                        <a href="/resume2.html" class="py-2 px-3 nav-hover font-medium">Resume</a>
+                        <a href="/contact.html" class="py-2 px-3 nav-hover font-medium">Contact Us</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="outline-none">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="flex justify-between items-center p-4 border-b border-teal-600">
+                <span class="font-bold text-lg">Menu</span>
+                <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+            </div>
+            <ul class="flex flex-col mt-4 space-y-4 p-4">
+                <li><a href="/Youth-HIV-Awareness.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Home</a></li>
+                <li><a href="/purpose.html"  class="block py-2 px-3 hover:bg-teal-600 rounded"> Our Purpose</a></li>
+                <li><a href="/partner.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Our Partners</a></li>
+                <li><a href="/resume2.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Resume</a></li>
+                <li><a href="/contact.html"  class="block py-2 px-3 hover:bg-teal-600 rounded">Contact Us</a></li>
+            </ul>
+        </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-teal-600 to-teal-700 text-white py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
+            <p class="text-xl max-w-2xl mx-auto">We're here to answer your questions about HIV awareness and prevention</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 section-title">Contact Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions about HIV prevention or our programs? Reach out to us and we'll get back to you as soon as possible.</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Contact Information Card -->
+                <div class="bg-teal-50 rounded-xl p-8 shadow-md card-hover lg:col-span-1">
+                    <h3 class="text-2xl font-semibold mb-6 text-teal-800">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-teal-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Location</h4>
+                                <a href="https://www.google.com/maps/place/Morton+Grove,+IL+60053,+USA/@42.039677,-87.814479,14z/data=!3m1!4b1!4m6!3m5!1s0x880e34fdb5c055cb:0x1d9f1a59ba0f41ad!8m2!3d42.0405852!4d-87.7825621!16zL20vMHM1N24?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D" 
+                                   target="_blank" class="text-gray-600 hover:text-teal-700 transition">
+                                    Morton Grove, IL 60053
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone text-teal-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Phone/WhatsApp</h4>
+                                <a href="https://wa.me/17737397989?text=Hello%2C%20I%20would%20like%20to%20chat%20about%20your%20services." 
+                                   target="_blank" class="text-gray-600 hover:text-teal-700 transition">
+                                    +1 (773) 739-7989
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-teal-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <a href="mailto:unsebashoaib.11@gmail.com?subject=Inquiry&body=Hello%2C%20I%20want%20to%20ask%20about%20..." 
+                                   class="text-gray-600 hover:text-teal-700 transition">
+                                    unsebashoaib.11@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i class="fab fa-linkedin-in text-teal-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">LinkedIn</h4>
+                                <p class="text-gray-600">Connect with us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-xl p-8 shadow-md card-hover lg:col-span-2">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block mb-2 font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2 font-medium text-gray-700">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition" placeholder="Subject of your message">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-medium text-gray-700">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:-translate-y-1">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-teal-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Need Immediate Assistance?</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">If you need to speak with someone right away about HIV testing or resources, call us directly</p>
+            <a href="tel:+17737397989" class="bg-white text-teal-700 hover:bg-teal-50 font-bold py-4 px-10 rounded-lg text-lg transition duration-300 inline-block transform hover:-translate-y-1">
+                <i class="fas fa-phone mr-2"></i> Call Now: (773) 739-7989
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer with Contact -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+                    <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/Youth-HIV-Awareness.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
+                        <li><a href="/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
+                        <li><a href="/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
+                        <li><a href="/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
+
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                     <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Morton Grove, IL 60053</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>+1 (773) 739-7989</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>unsebashoaib.11@gmail.com</span>
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('-translate-x-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+        });
+    </script>
+</body>
+</html>

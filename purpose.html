@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIV Awareness Illustration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            teal: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    /* Custom animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .float-animation {
+      animation: float 6s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-teal-50 to-gray-100 min-h-screen font-poppins">
+
+ <nav class="bg-teal-700 text-white shadow-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="/Youth-HIV-Awareness.html">
+                              <i class="fas fa-ribbon text-2xl mr-2 text-teal-200"></i>
+                        <span class="font-bold text-xl">YouthHIVwaAre</span>
+
+                        </a>
+                      
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="/Youth-HIV-Awareness.html" class="py-2 px-3 nav-hover font-medium">Home</a>
+                        <a href="/purpose.html" class="py-2 px-3 nav-hover font-medium"> Our Purpose</a>
+                        <a href="/partner.html" class="py-2 px-3 nav-hover font-medium">Our Partners</a>
+                        <a href="/resume2.html" class="py-2 px-3 nav-hover font-medium">Resume</a>
+                        <a href="/contact.html" class="py-2 px-3 nav-hover font-medium">Contact Us</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="outline-none">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="flex justify-between items-center p-4 border-b border-teal-600">
+                <span class="font-bold text-lg">Menu</span>
+                <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+            </div>
+            <ul class="flex flex-col mt-4 space-y-4 p-4">
+                <li><a href="/Youth-HIV-Awareness.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Home</a></li>
+                <li><a href="/purpose.html"  class="block py-2 px-3 hover:bg-teal-600 rounded"> Our Purpose</a></li>
+                <li><a href="/partner.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Our Partners</a></li>
+                <li><a href="/resume2.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Resume</a></li>
+                <li><a href="/contact.html"  class="block py-2 px-3 hover:bg-teal-600 rounded">Contact Us</a></li>
+            </ul>
+        </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8 md:py-12">
+    <!-- Hero Section -->
+    <section class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+      <div class="md:flex">
+        <div class="md:w-1/2 bg-gradient-to-r from-teal-600 to-teal-500 p-8 flex flex-col justify-center">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Breaking the Stigma Together</h1>
+          <p class="text-teal-100 text-lg mb-6">Know Your Status • Get Tested • Stay Safe</p>
+          <div class="flex justify-center">
+            <div class="bg-white bg-opacity-20 p-6 rounded-2xl shadow-lg float-animation">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs mx-auto">
+                <!-- Group of young people -->
+                <g>
+                  <!-- Person 1 -->
+                  <circle cx="100" cy="180" r="25" fill="#c8e6c9" />
+                  <circle cx="100" cy="150" r="15" fill="#a5d6a7" />
+                  <rect x="90" y="185" width="20" height="40" fill="#0d9488" rx="2" />
+                  <line x1="85" y1="185" x2="75" y2="165" stroke="#0d9488" stroke-width="6" />
+                  <line x1="115" y1="185" x2="125" y2="165" stroke="#0d9488" stroke-width="6" />
+                  
+                  <!-- Person 2 -->
+                  <circle cx="170" cy="180" r="25" fill="#c8e6c9" />
+                  <circle cx="170" cy="150" r="15" fill="#a5d6a7" />
+                  <rect x="160" y="185" width="20" height="40" fill="#0d9488" rx="2" />
+                  <line x1="155" y1="185" x2="145" y2="165" stroke="#0d9488" stroke-width="6" />
+                  <line x1="185" y1="185" x2="195" y2="165" stroke="#0d9488" stroke-width="6" />
+                  
+                  <!-- Person 3 -->
+                  <circle cx="240" cy="180" r="25" fill="#c8e6c9" />
+                  <circle cx="240" cy="150" r="15" fill="#a5d6a7" />
+                  <rect x="230" y="185" width="20" height="40" fill="#0d9488" rx="2" />
+                  <line x1="225" y1="185" x2="215" y2="165" stroke="#0d9488" stroke-width="6" />
+                  <line x1="255" y1="185" x2="265" y2="165" stroke="#0d9488" stroke-width="6" />
+                </g>
+                
+                <!-- Discussion bubbles -->
+                <path d="M140 120 Q160 100 180 120 T220 110" stroke="#ffffff" stroke-width="2" fill="none" />
+                <path d="M200 110 Q220 90 240 110 T280 100" stroke="#ffffff" stroke-width="2" fill="none" />
+                
+                <!-- HIV Ribbon -->
+                <path d="M300 250 L310 230 L290 230 Z" fill="red" />
+                <text x="300" y="280" text-anchor="middle" fill="white" font-size="13" font-weight="500">HIV Awareness</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+          <h2 class="text-2xl font-bold text-teal-700 mb-4">Youth HIV Awareness & Prevention</h2>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            The two-fold objectives of this theme are to provide young readers with accessible and stigma-free facts about HIV tests, and to emphasize the importance of knowing one's HIV status in a general prevention campaign.
+          </p>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Some youth are not exposed regularly to focused health communication work, especially in an environment where HIV is a taboo. This campaign helps normalize testing and connect students with health resources.
+          </p>
+
+          <!-- Call to Action -->
+          <div class="flex flex-wrap gap-4">
+            <button class="bg-teal-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-teal-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+              <i class="fas fa-info-circle"></i> Learn More About HIV Testing
+            </button>
+            <button class="border-2 border-teal-600 text-teal-700 py-3 px-6 rounded-full font-semibold hover:bg-teal-50 transition-all duration-300 flex items-center gap-2">
+              <i class="fas fa-map-marker-alt"></i> Find Testing Centers
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-center text-teal-800 mb-8">Why HIV Awareness Matters</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="text-teal-600 text-4xl mb-4">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-teal-800 mb-2">Youth Impact</h3>
+          <p class="text-gray-600">Young people account for a significant portion of new HIV infections globally each year.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="text-teal-600 text-4xl mb-4">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-teal-800 mb-2">Early Testing</h3>
+          <p class="text-gray-600">Early detection through testing can significantly improve treatment outcomes and prevent transmission.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="text-teal-600 text-4xl mb-4">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-teal-800 mb-2">Break the Stigma</h3>
+          <p class="text-gray-600">Open conversations about HIV reduce stigma and encourage more people to get tested.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="bg-teal-700 rounded-2xl p-8 text-white mb-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-4">Resources & Support</h2>
+        <p class="mb-6">We provide confidential resources, testing information, and educational materials to help you make informed decisions about your health.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="bg-white text-teal-700 py-2 px-5 rounded-full font-semibold hover:bg-teal-100 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+            <i class="fas fa-book"></i> Educational Materials
+          </button>
+          <button class="bg-teal-600 text-white py-2 px-5 rounded-full font-semibold hover:bg-teal-800 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+            <i class="fas fa-headset"></i> Support Hotline
+          </button>
+          <button class="border-2 border-white text-white py-2 px-5 rounded-full font-semibold hover:bg-teal-600 transition-all duration-300 flex items-center gap-2">
+            <i class="fas fa-calendar-alt"></i> Events & Workshops
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Contact -->
+   <!-- Footer with Contact -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+                    <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/Youth-HIV-Awareness.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
+                        <li><a href="/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
+                        <li><a href="/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
+                        <li><a href="/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
+
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                     <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Morton Grove, IL 60053</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>+1 (773) 739-7989</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>unsebashoaib.11@gmail.com</span>
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('-translate-x-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unseba - Dental Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa;
+        }
+
+        /* Hero Section Pattern */
+        .hero-pattern {
+            background-color: #e0f7fa;
+            background-image: radial-gradient(#b2ebf2 2px, transparent 2px),
+                              radial-gradient(#b2ebf2 2px, transparent 2px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+
+        /* Navigation Hover */
+        .nav-hover:hover {
+            background-color: #00838f;
+            border-radius: 4px;
+        }
+
+        /* Card Hover Effect */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #0d9488, transparent);
+            border-radius: 3px;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+   <nav class="bg-teal-700 text-white shadow-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="/Youth-HIV-Awareness.html">
+                              <i class="fas fa-ribbon text-2xl mr-2 text-teal-200"></i>
+                        <span class="font-bold text-xl">YouthHIVwaAre</span>
+
+                        </a>
+                      
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="/Youth-HIV-Awareness.html" class="py-2 px-3 nav-hover font-medium">Home</a>
+                        <a href="/purpose.html" class="py-2 px-3 nav-hover font-medium"> Our Purpose</a>
+                        <a href="/partner.html" class="py-2 px-3 nav-hover font-medium">Our Partners</a>
+                        <a href="/resume2.html" class="py-2 px-3 nav-hover font-medium">Resume</a>
+                        <a href="/contact.html" class="py-2 px-3 nav-hover font-medium">Contact Us</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="outline-none">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="flex justify-between items-center p-4 border-b border-teal-600">
+                <span class="font-bold text-lg">Menu</span>
+                <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+            </div>
+            <ul class="flex flex-col mt-4 space-y-4 p-4">
+                <li><a href="/Youth-HIV-Awareness.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Home</a></li>
+                <li><a href="/purpose.html"  class="block py-2 px-3 hover:bg-teal-600 rounded"> Our Purpose</a></li>
+                <li><a href="/partner.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Our Partners</a></li>
+                <li><a href="/resume2.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Resume</a></li>
+                <li><a href="/contact.html"  class="block py-2 px-3 hover:bg-teal-600 rounded">Contact Us</a></li>
+            </ul>
+        </div>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern py-12 md:py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-4">Unseba</h1>
+                <p class="text-gray-700 text-lg mb-4">Morton Grove, IL 60053 | LinkedIn | +1 (773) 739-7989 | unsebashoaib.11@gmail.com</p>
+                <p class="text-gray-700 text-lg mb-6">Dedicated dental professional with a Bachelor of Dental Surgery and strong clinical training across pediatric dentistry, orthodontics, and oral surgery. Skilled in treatment planning, patient education, and delivering preventive and restorative procedures with a focus on infection control. Recognized for strong communication skills, attention to detail, and a passion for improving oral health outcomes. Currently pursuing a Master's in Public Health to integrate community-focused healthcare solutions into dental practice.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition duration-300">Contact Me</a>
+                    <a href="#experience" class="border-2 border-teal-600 text-teal-700 hover:bg-teal-50 font-bold py-3 px-6 rounded-lg shadow-md transition duration-300">View Experience</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-teal-100 rounded-2xl transform rotate-3"></div>
+                    <img src="client.jpeg" alt="Unseba" class="relative rounded-2xl shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gradient-to-br from-teal-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto mb-12">
+                <h2 class="md:text-4xl text-3xl font-bold text-teal-800 mb-6 section-title pb-2">Education</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-teal-500">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-teal-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-graduation-cap text-teal-700 md:text-2xl text-xl"></i>
+                        </div>
+                        <h3 class="md:text-2xl text-xl font-semibold text-teal-700">Northeastern Illinois University</h3>
+                    </div>
+                    <p class="text-gray-700 mb-2 font-medium">Chicago, IL</p>
+                    <p class="text-gray-700 mb-4">Master's in Public Health (M.P.H), Expected 2026</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-teal-500">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-teal-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-graduation-cap text-teal-700 md:text-2xl text-xl"></i>
+                        </div>
+                        <h3 class="md:text-2xl text-xl font-semibold text-teal-700">Altamash Institute of Dental Medicine</h3>
+                    </div>
+                    <p class="text-gray-700 mb-2 font-medium">Karachi, Pakistan</p>
+                    <p class="text-gray-700 mb-4">Bachelor of Dental Surgery (BDS), 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Work Experience Section -->
+<section id="experience" class="py-16 bg-teal-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-4xl mx-auto mb-12">
+      <h2 class="md:text-4xl text-3xl font-bold text-teal-800 mb-6 section-title pb-2">
+        Work Experience
+      </h2>
+    </div>
+
+    <!-- Responsive Grid -->
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- Card 1 -->
+      <div
+        class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-teal-500"
+      >
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-start mb-6"
+        >
+          <div>
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">
+              Health Sciences Tutor (Graduate Assistant)
+            </h3>
+            <p class="text-gray-700 font-medium">
+              Learning Support Center/Center for Academic Writing, Northeastern
+              Illinois University — Chicago, IL
+            </p>
+          </div>
+          <p class="text-teal-600 font-semibold mt-2 md:mt-0 ">
+            Aug 2025 – Dec 2025
+          </p>
+        </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+          <li>
+            Supported undergraduate Health Sciences students with coursework,
+            emphasizing academic writing and WIP course HSCI 315.
+          </li>
+          <li>
+            Delivered one-on-one and group tutoring to strengthen subject
+            knowledge, study strategies, and communication skills.
+          </li>
+          <li>
+            Partnered with faculty to align tutoring with course objectives and
+            student learning goals.
+          </li>
+          <li>
+            Cultivated an inclusive learning environment that encouraged
+            engagement from students of diverse backgrounds.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-teal-500"
+      >
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-start mb-6"
+        >
+          <div>
+            <h3 class="text-2xl font-semibold text-teal-700 mb-2">
+              House Officer
+            </h3>
+            <p class="text-gray-700 font-medium">
+              Altamash Dental Clinic — Karachi, Pakistan
+            </p>
+          </div>
+          <p class="text-teal-600 font-semibold mt-2 md:mt-0">
+            Jun 2023 – Jun 2024
+          </p>
+        </div>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+          <li>
+            Performed oral examinations, developed treatment plans, and educated
+            pediatric patients and parents on dental hygiene.
+          </li>
+          <li>
+            Assisted in orthodontic treatments including impressions, appliance
+            fittings, and retention care.
+          </li>
+          <li>
+            Supported periodontal care through charting, probing, and assisting
+            in gum disease treatments.
+          </li>
+          <li>
+            Observed and assisted in prosthodontic procedures such as dentures,
+            crowns, and implants.
+          </li>
+          <li>
+            Prepared restorative materials and assisted with fillings,
+            extractions, and surgical pre/post-op care.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Certifications Section -->
+<section id="certifications" class="py-16 bg-gradient-to-br from-teal-50 to-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-4xl mx-auto mb-12">
+      <h2 class="md:text-4xl text-3xl font-bold text-teal-800 mb-6 section-title pb-2">
+        Certifications
+      </h2>
+    </div>
+
+    <!-- Two Cards Responsive Grid -->
+    <div class="grid gap-8 md:grid-cols-2">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-teal-500">
+        <h3 class="text-2xl font-semibold text-teal-700 mb-6">Distinctions</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-3">
+          <li>Community Dentistry (Distinction)</li>
+          <li>Anatomy (Distinction)</li>
+          <li>Pharmacology (Distinction)</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-teal-500">
+        <h3 class="text-2xl font-semibold text-teal-700 mb-6"> Certifications</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-3">
+          <li>Dental Materials (Distinction)</li>
+          <li>Oral Hygiene (Distinction)</li>
+          <li>
+            Case-Based Presentation: Effect of Surface Treatment on Retention of
+            Cemented-Retained, Implant-Supported Crown
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-teal-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto mb-12">
+                <h2 class="md:text-4xl text-3xl font-bold text-teal-800 mb-6 section-title pb-2">Skills</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-teal-500">
+                    <h3 class="text-2xl font-semibold text-teal-700 mb-6">Professional Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3">
+                        <li>Dental Procedures: Examinations, treatment planning, fillings, extractions, periodontal care, prosthetics</li>
+                        <li>Dental Instruments: Hand tools, radiography, impression materials, rotary instruments</li>
+                        <li>Infection Control & Sterilization</li>
+                        <li>Patient Management & Education</li>
+                        <li>Oral Hygiene & Preventive Interventions</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-l-4 border-teal-500">
+                    <h3 class="text-2xl font-semibold text-teal-700 mb-6">Additional Competencies</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-teal-100 text-teal-800 py-2 px-4 rounded-full">Treatment Planning</span>
+                        <span class="bg-teal-100 text-teal-800 py-2 px-4 rounded-full">Patient Education</span>
+                        <span class="bg-teal-100 text-teal-800 py-2 px-4 rounded-full">Preventive Dentistry</span>
+                        <span class="bg-teal-100 text-teal-800 py-2 px-4 rounded-full">Restorative Procedures</span>
+                        <span class="bg-teal-100 text-teal-800 py-2 px-4 rounded-full">Communication Skills</span>
+                        <span class="bg-teal-100 text-teal-800 py-2 px-4 rounded-full">Attention to Detail</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">I'm interested in opportunities in dental practice and public health. Let's discuss how I can contribute to your organization.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:unsebashoaib.11@gmail.com" class="bg-white text-teal-700 hover:bg-teal-50 font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">Email Me</a>
+                <a href="tel:+17737397989" class="border-2 border-white hover:bg-teal-800 font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">Call Me</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer with Contact -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+                    <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="http://127.0.0.1:5501/Youth-HIV-Awareness.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
+                        <li><a href="http://127.0.0.1:5501/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
+                        <li><a href="http://127.0.0.1:5501/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
+                        <li><a href="http://127.0.0.1:5501/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
+                        <li><a href="http://127.0.0.1:5501/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
+
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                     <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Morton Grove, IL 60053</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>+1 (773) 739-7989</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>unsebashoaib.11@gmail.com</span>
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>  <!-- Footer with Contact -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+                    <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/Youth-HIV-Awareness.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
+                        <li><a href="/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
+                        <li><a href="/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
+                        <li><a href="/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
+
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                     <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Morton Grove, IL 60053</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>+1 (773) 739-7989</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>unsebashoaib.11@gmail.com</span>
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('-translate-x-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+        });
+
+    </script>
+    </script>
+</body>
+</html>
