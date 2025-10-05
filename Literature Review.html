@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Review - YouthHIVAware</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-pattern {
+            background-color: #e0f7fa;
+            background-image: radial-gradient(#b2ebf2 2px, transparent 2px),
+                radial-gradient(#b2ebf2 2px, transparent 2px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #0d9488, transparent);
+            border-radius: 3px;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .theme-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .reference-item {
+            border-left: 4px solid #00838f;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Mobile-specific adjustments */
+        @media (max-width: 640px) {
+            .mobile-stack {
+                flex-direction: column;
+            }
+            
+            .mobile-center {
+                text-align: center;
+            }
+            
+            .mobile-full {
+                width: 100%;
+            }
+            
+            .mobile-padding {
+                padding: 1.25rem;
+            }
+            
+            .mobile-margin-bottom {
+                margin-bottom: 1.25rem;
+            }
+            
+            .theme-icon {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto 15px;
+            }
+            
+            .theme-icon i {
+                font-size: 1.5rem;
+            }
+            
+            .hero-pattern {
+                padding: 2rem 1rem !important;
+            }
+            
+            h1 {
+                font-size: 1.75rem !important;
+            }
+            
+            h2 {
+                font-size: 1.5rem !important;
+            }
+            
+            h3 {
+                font-size: 1.25rem !important;
+            }
+            
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        /* Tablet-specific adjustments */
+        @media (min-width: 641px) and (max-width: 1024px) {
+            .tablet-padding {
+                padding: 2rem;
+            }
+            
+            .tablet-full {
+                width: 100%;
+            }
+            
+            .tablet-stack {
+                flex-direction: column;
+            }
+            
+            .hero-pattern {
+                padding: 3rem 1.5rem !important;
+            }
+        }
+
+        /* References section specific styles */
+        #references-section .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        #references-section .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #0d9488, transparent);
+            border-radius: 3px;
+        }
+
+        #references-section .reference-item {
+            border-left: 4px solid #00838f;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        #references-section a {
+            word-break: break-all;
+            overflow-wrap: anywhere;
+            display: inline-block;
+            max-width: 100%;
+            white-space: normal;
+        }
+
+        @media (max-width: 640px) {
+            #references-section .mobile-center {
+                text-align: center;
+            }
+
+            #references-section .mobile-padding {
+                padding: 1.25rem;
+            }
+            
+            #references-section .reference-item {
+                padding-left: 12px;
+                margin-bottom: 16px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+      <nav class="bg-teal-700 text-white shadow-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="/index.html">
+                              <i class="fas fa-ribbon text-2xl mr-2 text-teal-200"></i>
+                        <span class="font-bold text-xl">YouthHIV Awareness</span>
+
+                        </a>
+                      
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="/index.html" class="py-2 px-3 nav-hover font-medium">Home</a>
+                        <a href="/purpose.html" class="py-2 px-3 nav-hover font-medium"> Our Purpose</a>
+                        <a href="/partner.html" class="py-2 px-3 nav-hover font-medium">Our Partners</a>
+                        <a href="/resume2.html" class="py-2 px-3 nav-hover font-medium">Resume</a>
+                        <a href="/contact.html" class="py-2 px-3 nav-hover font-medium">Contact Us</a>
+                        <a href="/Literature%20Review.html" class="py-2 px-3 nav-hover font-medium">Literature Review</a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="outline-none">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="flex justify-between items-center p-4 border-b border-teal-600">
+                <span class="font-bold text-lg">Menu</span>
+                <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+            </div>
+            <ul class="flex flex-col mt-4 space-y-4 p-4">
+                <li><a href="/index.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Home</a></li>
+                <li><a href="/purpose.html"  class="block py-2 px-3 hover:bg-teal-600 rounded"> Our Purpose</a></li>
+                <li><a href="/partner.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Our Partners</a></li>
+                <li><a href="/resume2.html" class="block py-2 px-3 hover:bg-teal-600 rounded">Resume</a></li>
+                <li><a href="/contact.html"  class="block py-2 px-3 hover:bg-teal-600 rounded">Contact Us</a></li>
+                <li><a href="/Literature%20Review.html"  class="block py-2 px-3 hover:bg-teal-600 rounded">Literature Review</a></li>
+            </ul>
+        </div>
+    <section class="hero-pattern py-8 md:py-12 lg:py-16">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-teal-800 mb-4">Literature Review</h1>
+            <p class="text-base sm:text-lg md:text-xl text-teal-600 max-w-3xl mx-auto">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 py-6 md:py-10 lg:py-12">
+        <!-- Introduction -->
+        <section class="mb-10 md:mb-14 lg:mb-16">
+            <div class="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 items-center mobile-stack tablet-stack">
+                <div class="lg:w-2/3 mobile-full tablet-full">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-teal-700 mb-4 md:mb-6 section-title mobile-center">Introduction</h2>
+                    <div class="prose max-w-none text-gray-700 text-sm sm:text-base">
+                        <p class="mb-3 sm:mb-4">This review is a study of HIV status among high school and college students with a focus on its relationship with prevention behavior. It identifies stigma, low awareness, and poor communication as obstacles to testing and protective action. The proposed intervention, Know Your Status, Protect Your Future, is to enhance HIV literacy and reduce stigmas through peer education and digital campaigning, and promote voluntary testing (Reinius, Eriksson, Svedhem, & Esfahani, 2021).</p>
+                        <p>The review is divided into three parts: the introduction, where the problem and intervention are defined, the body, where evidence is summarized by theme, and the conclusion, where the research findings are contextualized to the proposed communications strategy to improve youth HIV prevention.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 mobile-full tablet-full mt-4 sm:mt-6 md:mt-8 lg:mt-0">
+                    <img src="intro.jpg" alt="Youth education" class="rounded-lg shadow-lg responsive-img h-40 sm:h-48 md:h-56 lg:h-64">
+                </div>
+            </div>
+        </section>
+
+        <!-- Literature Review Themes -->
+        <section class="mb-10 md:mb-14 lg:mb-16">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-teal-700 mb-6 md:mb-8 lg:mb-10 text-center section-title">Literature Review</h2>
+            
+            <!-- Theme 1 -->
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-5 md:p-6 mb-5 sm:mb-6 md:mb-8 card-hover mobile-padding">
+                <div class="flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6 mobile-stack">
+                    <div class="lg:w-3/4 mobile-full tablet-full">
+                        <div class="flex flex-col md:flex-row items-center mb-3 sm:mb-4 mobile-stack">
+                            <div class="theme-icon bg-blue-100 text-blue-600">
+                                <i class="fas fa-brain text-xl sm:text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-teal-700 md:ml-4 mobile-center mobile-margin-bottom">Theme 1: Knowledge, Attitudes, and Perceptions of HIV Among Students</h3>
+                        </div>
+                        <div class="prose max-w-none text-gray-700 text-sm sm:text-base">
+                            <p class="mb-3 sm:mb-4">According to Harris (2019), many students still believe in the falsity of HIV transmission and prevention. The study indicates medium awareness and low knowledge of the importance of testing. Some believe that only specific groups are at risk due to HIV; thus, their chances of getting infected are less. Girls are more educated and less outspoken in demanding testing. Cultural silence on sexual health perpetuates common misinformation. Overall, the lack of knowledge and ambiguity toward students invalidates their wish to test or accept preventive behavior.</p>
+                            <p class="mb-3 sm:mb-4">This shows that it is important that we have a comprehensive HIV education where all the myths will be busted and the students will be encouraged to make the right health choices (Harris, 2019). Peer and open conversation and culturally sensitive communication should be included in educational programs in order to form more awareness and motivate the youth to undergo voluntary testing to eventually result in a more responsible and health-conscious youth.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 mobile-full tablet-full flex justify-center mt-4 md:mt-16">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Students discussing health topics" class="rounded-lg shadow-md responsive-img h-40 sm:h-48 md:h-56">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Theme 2 -->
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-5 md:p-6 mb-5 sm:mb-6 md:mb-8 card-hover mobile-padding">
+                <div class="flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6 mobile-stack">
+                    <div class="lg:w-3/4 mobile-full tablet-full">
+                        <div class="flex flex-col md:flex-row items-center mb-3 sm:mb-4 mobile-stack">
+                            <div class="theme-icon bg-red-100 text-red-600">
+                                <i class="fas fa-ban text-xl sm:text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-teal-700 md:ml-4 mobile-center mobile-margin-bottom">Theme 2: Barriers to HIV Testing and Status Disclosure</h3>
+                        </div>
+                        <div class="prose max-w-none text-gray-700 text-sm sm:text-base">
+                            <p class="mb-3 sm:mb-4">According to Khamisa (2020), barriers to youth engagement include a lack of youth-friendly services and a lack of confidentiality in school-based clinics. There are also cultural taboos related to sex, and when they reflect the status, then it is passed on to the testing, where an individual will be unsure about the result and fearful of the reaction of others. The barriers are less collaborative transaction styles, restricted, accommodating, and limited.</p>
+                            <p class="mb-3 sm:mb-4">In this respect, it has been recommended that educational institutions and health care organizations must provide testing pathways that are both confidential and youth-oriented, thus providing them with privacy and emotional security (Khamisa, Mokgobi, & Basera, 2020). HIV should be de-stigmatized and normalized to discuss and test HIV, understanding that peer-education and peer-counselors, one person can access to create stronger awareness. A setting where it is stigmatized will increase the number of tests and encourage young people that they can choose how to live their sexual life.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 mobile-full tablet-full flex justify-center mt-4 md:mt-16">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Confidential health consultation" class="rounded-lg shadow-md responsive-img h-40 sm:h-48 md:h-56">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Theme 3 -->
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-5 md:p-6 mb-5 sm:mb-6 md:mb-8 card-hover mobile-padding">
+                <div class="flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6 mobile-stack">
+                    <div class="lg:w-3/4 mobile-full tablet-full">
+                        <div class="flex flex-col md:flex-row items-center mb-3 sm:mb-4 mobile-stack">
+                            <div class="theme-icon bg-green-100 text-green-600">
+                                <i class="fas fa-comments text-xl sm:text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-teal-700 md:ml-4 mobile-center mobile-margin-bottom">Theme 3: Effectiveness of Communication and Educational Interventions</h3>
+                        </div>
+                        <div class="prose max-w-none text-gray-700 text-sm sm:text-base">
+                            <p class="mb-3 sm:mb-4">According to Patrick (2024), Interactive education among young people has been reported to produce improved knowledge about HIV and behavior on testing. Students who are especially inclined to communicate with the help of campaigns using the power of social media will learn without difficulty. Of course, this has been supported by a theoretically-informed presence, including the Theory of Planned Behavior and the Health Behavior Theory, now that knowledge brings intention.</p>
+                            <p class="mb-3 sm:mb-4">Most successful interventions tend to be factual in nature with minimal stigmatizing and affective aspects. The assumption of long-term contact is culturally competent, recognizable communication (Patrick, 2024). It is prudent to consider the new and transformational opportunities in communication with students that offer learning and credibility in action in light of increased contact. A more interactive form of information and peer education can be provided through technology. The change of behaviour and the development of awareness of HIV in the educational environment is created through regular participation and behaviour change over time, contingent upon the cultural and social reality of students.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 mobile-full tablet-full flex justify-center mt-4 md:mt-16">
+                        <img src="https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Interactive educational session" class="rounded-lg shadow-md responsive-img h-40 sm:h-48 md:h-56">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Theme 4 -->
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-5 md:p-6 mb-5 sm:mb-6 md:mb-8 card-hover mobile-padding">
+                <div class="flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6 mobile-stack">
+                    <div class="lg:w-3/4 mobile-full tablet-full">
+                        <div class="flex flex-col md:flex-row items-center mb-3 sm:mb-4 mobile-stack">
+                            <div class="theme-icon bg-purple-100 text-purple-600">
+                                <i class="fas fa-university text-xl sm:text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-teal-700 md:ml-4 mobile-center mobile-margin-bottom">Theme 4: Policy and Institutional Support for HIV Prevention in Schools</h3>
+                        </div>
+                        <div class="prose max-w-none text-gray-700 text-sm sm:text-base">
+                            <p class="mb-3 sm:mb-4">According to Ibrahim (2024), policies to promote HIV education are implemented unequally in schools and colleges. Many institutions lack trained teachers and a standardization of practice. Another crucial support to prevention programs is education and health ministry support, which has to be coordinated and financed. With proper policy guidelines, the introduction of HIV education in schools as a school health curriculum makes a positive contribution to the awareness level.</p>
+                            <p class="mb-3 sm:mb-4">Both institutional commitment and communication-based approaches justify the long-term impact and accountability on student HIV prevention (Ibrahim, Kahle, Christiani, & Suryani, 2024). Consistent HIV education is important to increasing policy coordination, educator funding, and training. The sustainability, responsibility, and overall effectiveness of communication practices in schools would minimize the risk of HIV among students.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 mobile-full tablet-full flex justify-center mt-4 md:mt-16">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="School health policy discussion" class="rounded-lg shadow-md responsive-img h-40 sm:h-48 md:h-56">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary and Conclusions -->
+        <section class="mb-10 md:mb-14 lg:mb-16">
+            <div class="bg-teal-50 rounded-xl p-5 sm:p-6 md:p-8 border-l-4 border-teal-500 mobile-padding">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-teal-700 mb-4 md:mb-6 section-title mobile-center">Summary and Conclusions</h2>
+                <div class="prose max-w-none text-gray-700 text-sm sm:text-base">
+                    <p class="mb-3 sm:mb-4">The reviewed studies suggest that knowledge deficiency, stigmatization, and low institutional support are barriers to student prevention of HIV. Effective communication, especially peer-led, digital, and culturally sensitive communication, improves knowledge and testing behaviour. However, inconsistent policy implementation and unqualified teachers are issues.</p>
+                    <p>The Know Your Status, Protect Your Future intervention aims to address these gaps through the establishment of easy-to-access and youth-friendly education and confidential testing. The only way that HIV prevention among youths can be sustainable is by intensifying communication and policy coordination in schools.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section id="references-section" class="mb-10 md:mb-14 lg:mb-16">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-teal-700 mb-4 md:mb-6 section-title mobile-center">References</h2>
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-5 md:p-6 mobile-padding overflow-hidden">
+                <div class="space-y-4 sm:space-y-5">
+                    <div class="reference-item">
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Harris, J. M. (2019, Aug 15). Knowledge, Behavior, and Attitudes of College Students Regarding HIV/AIDS.
+                            <em>Research Gate</em>, 612. Retrieved from
+                            <a href="https://www.researchgate.net/publication/342898096" class="text-teal-600 hover:underline break-all">
+                                https://www.researchgate.net/publication/342898096
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="reference-item">
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Ibrahim, K., Kahle, E. M., Christiani, Y., & Suryani, S. (2024, Feb 9). Utilization of Social Media for the
+                            Prevention and Control of HIV/AIDS: A Scoping Review. <em>PMCID</em>, 672. Retrieved from
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11127661/" class="text-teal-600 hover:underline break-all">
+                                https://pmc.ncbi.nlm.nih.gov/articles/PMC11127661/
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="reference-item">
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Khamisa, N., Mokgobi, M., & Basera, T. (2020, Oct 8). Knowledge, attitudes, and behaviours towards people with
+                            HIV and AIDS among private higher education students in Johannesburg, South Africa. <em>PMCID</em>, 345.
+                            Retrieved from
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7136969/" class="text-teal-600 hover:underline break-all">
+                                https://pmc.ncbi.nlm.nih.gov/articles/PMC7136969/
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="reference-item">
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Patrick, O. (2024, March 14). Effectiveness of Peer-Led Education in Reducing HIV Transmission among Youths in
+                            Urban Areas: A Comprehensive Review. <em>IDOSR JOURNAL OF SCIENCE AND TECHNOLOGY</em>, 783. Retrieved from
+                            <a href="https://www.researchgate.net/publication/385680772_Effectiveness_of_Peer-Led_Education_in_Reducing_HIV_Transmission_among_Youths_in_Urban_Areas_A_Comprehensive_Review" class="text-teal-600 hover:underline break-all">
+                                https://www.researchgate.net/publication/385680772_Effectiveness_of_Peer-Led_Education_in_Reducing_HIV_Transmission_among_Youths_in_Urban_Areas_A_Comprehensive_Review
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="reference-item">
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Reinius, G. Z., Eriksson, L. E., Svedhem, V., & Esfahani, F. M. (2021, Nov 17). Stigma Reduction Interventions
+                            in People Living with HIV to Improve Health-Related Quality of Life. <em>PMCID</em>, 872. Retrieved from
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7343253/" class="text-teal-600 hover:underline break-all">
+                                https://pmc.ncbi.nlm.nih.gov/articles/PMC7343253/
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Contact -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+                    <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
+                        <li><a href="/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
+                        <li><a href="/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
+                        <li><a href="/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
+<li><a href="/Literature%20Review.html" class="text-gray-400 hover:text-teal-300 transition">Literature Review</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                     <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Morton Grove, IL 60053</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>+1 (773) 739-7989</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>unsebashoaib.11@gmail.com</span>
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('-translate-x-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+        });
+
+    </script>
+
+</body>
+</html>
