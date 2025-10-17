@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth, HIV, and Prevention: Building Awareness Through Status Assessment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+    }
+
+    .hero-pattern {
+      background-color: #e0f7fa;
+      background-image: radial-gradient(#b2ebf2 2px, transparent 2px),
+        radial-gradient(#b2ebf2 2px, transparent 2px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+
+    .nav-hover:hover {
+      background-color: #00838f;
+      border-radius: 4px;
+    }
+
+    .partner-logo {
+      filter: grayscale(100%) brightness(0%);
+      transition: all 0.3s ease;
+    }
+
+    .partner-logo:hover {
+      filter: none;
+    }
+
+    .image-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #0d9488, transparent);
+      border-radius: 3px;
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="min-h-screen flex flex-col">
+   <nav class="bg-teal-700 text-white shadow-lg">
+      <div class="container mx-auto px-4 ">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <a href="/index.html">
+              <i class="fas fa-ribbon text-2xl mr-2 text-teal-200"></i>
+              <span class="font-bold text-xl">YouthHIV Awareness</span>
+            </a>
+          </div>
+
+          <!-- Desktop Menu (only on large screens) -->
+          <div class="hidden lg:flex space-x-6">
+            <a href="/index.html" class="py-2 px-2 nav-hover font-medium">Home</a>
+            <a href="/purpose.html" class="py-2 px-2 nav-hover font-medium">Our Purpose</a>
+            <a href="/partner.html" class="py-2 px-2 nav-hover font-medium">Our Partners</a>
+            <a href="/resume2.html" class="py-2 px-2 nav-hover font-medium">Resume</a>
+            <a href="/contact.html" class="py-2 px-2 nav-hover font-medium">Contact Us</a>
+            <a href="/Literature%20Review.html" class="py-2 px-3 nav-hover font-medium">Literature Review</a>
+            <a href="/Public%20Service%20Announcement.html" class="py-2 px-3 nav-hover font-medium">Public Service Announcement</a>
+          </div>
+
+          <!-- Mobile + iPad Menu Button -->
+          <div class="lg:hidden">
+            <button id="menu-btn" class="outline-none">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="mobile-menu"
+      class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+      <div class="flex justify-between items-center p-4 border-b border-teal-600">
+        <span class="font-bold text-lg text-[0.775rem]">Menu</span>
+        <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+      </div>
+      <ul class="flex flex-col mt-4 space-y-3 p-4">
+        <li><a href="/index.html" class="block py-2 px-3 hover:bg-teal-600 rounded text-[0.775rem] ">Home</a></li>
+        <li><a href="/purpose.html" class="block py-2 px-3 hover:bg-teal-600 rounded text-[0.775rem]">Our Purpose</a></li>
+        <li><a href="/partner.html" class="block py-2 px-3 hover:bg-teal-600 rounded text-[0.775rem]">Our Partners</a></li>
+        <li><a href="/resume2.html" class="block py-2 px-3 hover:bg-teal-600 rounded text-[0.775rem]">Resume</a></li>
+        <li><a href="/contact.html" class="block py-2 px-3 hover:bg-teal-600 rounded text-[0.775rem]">Contact Us</a></li>
+        <li><a href="/Literature%20Review.html" class="block py-2 px-3 hover:bg-teal-600 text-[0.775rem] rounded">Literature Review</a></li>
+            <a href="/Public%20Service%20Announcement.html" class="py-2 px-3 nav-hover text-[0.775rem]">Public Service Announcement</a>
+      </ul>
+    </div>
+
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8 grid place-content-center">
+      <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-bold text-teal-700 mb-4 text-center">Public Service Announcement</h2>
+        <div class="flex flex-col items-center">
+          <audio controls class="w-full max-w-md">
+            <source src="Public Service Announcement.ogg" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <p class="text-gray-600 mt-4 text-center">Listen to our public service announcement about HIV prevention and
+            awareness among youth.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+            <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV
+              Prevention.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/index.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
+              <li><a href="/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
+              <li><a href="/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
+              <li><a href="/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
+              <li><a href="/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
+              <li><a href="/Literature%20Review.html" class="text-gray-400 hover:text-teal-300 transition">Literature Review</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Morton Grove, IL 60053</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3"></i>
+                <span>+1 (773) 739-7989</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>unsebashoaib.11@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('-translate-x-full');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('-translate-x-full');
+    });
+  </script>
+</body>
+
+</html>
