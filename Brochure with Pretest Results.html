@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Brochure & Pretest Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            line-height: 1.6;
+        }
+        
+        .brochure-page {
+            background: linear-gradient(to bottom, #f0fdfa, #ccfbf1);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .brochure-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, #0d9488, #14b8a6, #2dd4bf);
+        }
+        
+        .pretest-section {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .question-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid #0d9488;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .recommendation-box {
+            background-color: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .quote-box {
+            background-color: #fef7cd;
+            border-left: 4px solid #eab308;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, #0d9488, transparent);
+            border-radius: 3px;
+        }
+        
+        .brochure-title {
+            color: #134e4a;
+            font-weight: 700;
+        }
+        
+        .pretest-title {
+            color: #0f766e;
+            font-weight: 700;
+        }
+        
+        .bullet-points {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .bullet-points li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+        }
+        
+        .bullet-points li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #0d9488;
+            font-weight: bold;
+        }
+        
+        .warning-signs li::before {
+            content: '❖';
+            color: #dc2626;
+        }
+        
+        .brochure-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .brochure-img:hover {
+            transform: scale(1.02);
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            color: white;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .img-container:hover .img-overlay {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+  <nav class="bg-teal-700 text-white shadow-lg relative">
+  <div class="container mx-auto px-2">
+    <div class="flex justify-between items-center py-3">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <a href="/index.html" class="flex items-center space-x-1">
+          <i class="fas fa-ribbon text-lg text-teal-200"></i>
+          <span class="font-semibold text-sm sm:text-base">YouthHIV Awareness</span>
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex flex-wrap space-x-4 text-xs">
+        <a href="/index.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Home</a>
+        <a href="/purpose.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Our Purpose</a>
+        <a href="/partner.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Our Partners</a>
+        <a href="/resume2.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Resume</a>
+        <a href="/contact.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Contact</a>
+        <a href="/News%20Release.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">News Release</a>
+        <a href="/Brochure%20with%20Pretest%20Results.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Brochure with Pretest Results</a>
+        <a href="/Literature%20Review.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Literature Review</a>
+        <a href="/Public%20Service%20Announcement.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Public Service Announcement</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden">
+        <button id="menu-btn" class="outline-none">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sidebar Menu -->
+  <div id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 z-50">
+    <div class="flex justify-between items-center p-4 border-b border-teal-600">
+      <h2 class="font-bold text-lg">Menu</h2>
+      <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <ul class="flex flex-col p-4 space-y-3 text-sm">
+      <li><a href="/index.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Home</a></li>
+      <li><a href="/purpose.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Our Purpose</a></li>
+      <li><a href="/partner.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Our Partners</a></li>
+      <li><a href="/resume2.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Resume</a></li>
+      <li><a href="/contact.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Contact</a></li>
+      <li><a href="/News%20Release.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">News Release</a></li>
+      <li><a href="/Brochure%20with%20Pretest%20Results.html" class="block py-2 px-3 text-xs rounded hover:bg-teal-600 transition">Brochure with Pretest Results</a></li>
+      <li><a href="/Literature%20Review.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Literature Review</a></li>
+      <li><a href="/Public%20Service%20Announcement.html" class="block text-xs py-2 px-3 rounded hover:bg-teal-600 transition">Public Service Announcement</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="md:text-4xl text-lg font-bold text-teal-800 mb-4">Mental Health and Well-Being for Elderly Adults</h1>
+        </div>
+        
+        <!-- Brochure Content -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Page 1 -->
+            <div class="brochure-page mb-8">
+                <h3 class="md:text-2xl text-xl font-semibold text-teal-700 mb-6 text-center">Caring for Your Mind in Later Life</h3>
+                
+                <!-- First Image -->
+                <div class="img-container mb-8">
+                    <img src="Screenshot 2025-11-02 221033.png" 
+                         alt="Mental Health Brochure Page 1" 
+                         class="brochure-img">
+                    <div class="img-overlay">
+                        <p class="text-sm">Mental Health and Well-Being for Elderly Adults</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="brochure-page">
+                <h3 class="md:text-2xl text-sm font-bold text-teal-800 mb-6">Everyday Habits for a Healthy Mind</h3>
+                
+                <!-- Second Image -->
+                <div class="img-container">
+                    <img src="Screenshot 2.png" 
+                         alt="Mental Health Brochure Page 2" 
+                         class="brochure-img">
+                    <div class="img-overlay">
+                        <p class="text-sm">Everyday Habits for a Healthy Mind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pretest Results -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <div class="pretest-section">
+                <h2 class="pretest-title md:text-3xl text-xl font-bold mb-8 text-center">Pretesting your Brochure</h2>
+                
+                <p class="text-gray-700 mb-6 italic">
+                    (Used with the created brochure: "Caring for Your Mind in Later Life")
+                </p>
+                
+                <h3 class="section-title md:text-2xl text-xl font-bold text-teal-800">Target Audience:</h3>
+                
+                <p class="text-gray-700 mb-8">
+                    The pretest involved five older adults (50-65 years old) who attended a
+                    community center in the local area. They were given a printed copy of
+                    the brochure and asked the following questions individually.
+                </p>
+                
+                <!-- Question 1 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">1. What is the first thing that caught your eye when you first saw this piece?</h4>
+                    <p class="text-gray-700">
+                        The participants reported that what drew their attention was the title
+                        Caring for Your Mind in Later Life and the smiling older adults in the
+                        picture first. They referenced the design as being relaxed, welcoming,
+                        and readable.
+                    </p>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">2. What do you think its main message is?</h4>
+                    <p class="text-gray-700">
+                        Every participant appropriately defined it by stating the primary
+                        message, that mental health in old age needs to be taken care of, and
+                        that it is as important as bodily health.
+                    </p>
+                </div>
+                
+                <!-- Question 3 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">3. Does it raise your interest in the subject?</h4>
+                    <p class="text-gray-700">
+                        Yes. The participants indicated that the brochure increased their
+                        passion to know more about emotional well-being, in particular, how they
+                        could manage stress and loneliness over time.
+                    </p>
+                </div>
+                
+                <!-- Question 4 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">4. Do you think the wording is appropriate for the target audience?</h4>
+                    <p class="text-gray-700">
+                        Yes. The language was said to be admirable, courteous, and clear. One
+                        participant was pleased that it was written in non-technical medical
+                        language.
+                    </p>
+                </div>
+                
+                <!-- Question 5 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">5. What improvements would you make in its layout?</h4>
+                    <p class="text-gray-700 mb-4">Participants suggested:</p>
+                    <ul class="bullet-points text-gray-700">
+                        <li>Adding a <strong>slightly larger font size</strong> for easier reading.</li>
+                        <li>Including <strong>more spacing</strong> between bullet points.</li>
+                        <li>Use <strong>softer background colors</strong> to reduce glare.</li>
+                    </ul>
+                </div>
+                
+                <!-- Question 6 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">6. What could be added or removed to improve it?</h4>
+                    <p class="text-gray-700 mb-4">Suggestions included:</p>
+                    <ul class="bullet-points text-gray-700">
+                        <li>Adding a short <strong>contact number for local mental-health support.</strong></li>
+                        <li>Including <strong>one positive quote or encouragement line</strong> on the back panel.</li>
+                        <li>No information was found unnecessary; participants liked that it was "not too crowded."</li>
+                    </ul>
+                </div>
+                
+                <!-- Question 7 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">7. Is the reading level compatible with that of the target population?</h4>
+                    <p class="text-gray-700">
+                        Yes. The level of reading was found to be easy and comprehensible to the
+                        older generation. Individuals reported that they did not need any
+                        assistance to read and comprehend it.
+                    </p>
+                </div>
+                
+                <!-- Question 8 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">8. Is the format (channel) appropriate for the target audience?</h4>
+                    <p class="text-gray-700">
+                        Yes. It was considered that a printed tri-fold brochure was quite
+                        appropriate because most of the elderly adults consider reading at a
+                        slow pace and holding the piece that they are able to read.
+                    </p>
+                </div>
+                
+                <!-- Question 9 -->
+                <div class="question-box">
+                    <h4 class="md:text-xl text-sm font-bold text-teal-800 mb-3">9. How does the piece measure up to the Universal Intellectual Standards?</h4>
+                    <p class="text-gray-700 mb-4">Participants noted the brochure was:</p>
+                    <ul class="bullet-points text-gray-700">
+                        <li><strong>Clear:</strong> Simple wording and good flow.</li>
+                        <li><strong>Accurate:</strong> Information matched what doctors and TV programs say.</li>
+                        <li><strong>Relevant:</strong> Focused on senior experiences.</li>
+                        <li><strong>Fair:</strong> Positive and respectful toward older people.</li>
+                    </ul>
+                </div>
+                
+                <!-- Summary -->
+                <h3 class="section-title md:text-2xl text-lg font-bold text-teal-800 mt-10">Summary of Recommended Changes Based on Pretest</h3>
+                
+                <p class="text-gray-700 mb-6">
+                    Participants recommended that the font size be enlarged and that the
+                    line spacing be made large to facilitate easier reading before final
+                    distribution. Their other suggestions were to have a pastel background,
+                    reduce glare, include a local mental-health contact number, and have an
+                    inspiring quote like <em>It's never too late to take care of your mind</em>. In
+                    general, the brochure was reported to be clear, appealing, and
+                    encouraging to the aged adults, who indicated that they would be happy
+                    distributing it to those within their age group..
+                </p>
+                
+                <div class="recommendation-box">
+                    <h4 class="md:text-xl text-lg font-bold text-green-800 mb-4">Key Recommendations:</h4>
+                    <ol class="list-decimal pl-5 text-gray-700 space-y-3">
+                        <li><strong>Increase font size</strong> slightly for easier readability.</li>
+                        <li><strong>Add more spacing</strong> between lines and bullet points for visual comfort.</li>
+                        <li><strong>Use a light beige or pastel background</strong> instead of white to reduce glare.</li>
+                        <li><strong>Include a local mental-health contact number</strong> or resource for quick help.</li>
+                        <li><strong>Add an encouraging quote</strong> such as <em>"It's never too late to care for your mind."</em></li>
+                    </ol>
+                </div>
+                
+                <p class="text-gray-700 mb-6">
+                    Overall, participants found the brochure <strong>clear, motivating, and visually appealing</strong>, and said they would be willing to share it with others in their age group.
+                </p>
+                
+                <!-- Conclusion -->
+                <h3 class="section-title md:text-2xl text-xl font-bold text-teal-800 mt-10">Conclusion</h3>
+                
+                <p class="text-gray-700">
+                    The pretest findings indicated that the message, tone, and design used
+                    in the brochure are appropriate for older adults. Minor adjustments
+                    regarding visual and layout changes are required. The brochure is
+                    effective in fostering a mental well-being attitude in later life, which
+                    achieves the affective learning goal.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer with Contact -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+                    <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
+                        <li><a href="/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
+                        <li><a href="/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
+                        <li><a href="/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
+                        <li><a href="/News%20Release.html" class="text-gray-400 hover:text-teal-300 transition">News Release</a></li>
+                 <li><a href="/Literature%20Review.html" class="text-gray-400 hover:text-teal-300 transition">Literature Review</a></li>
+                 <li><a href="/Brochure%20with%20Pretest%20Results.html" class="text-gray-400 hover:text-teal-300 transition"> Brochure with Pretest Results</a></li>
+                
+                 <li><a href="/Public%20Service%20Announcement.html" class="text-gray-400 hover:text-teal-300 transition">Public Service Announcement</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                     <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Morton Grove, IL 60053</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>+1 (773) 739-7989</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>unsebashoaib.11@gmail.com</span>
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+  <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const closeBtn = document.getElementById('close-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('-translate-x-full');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('-translate-x-full');
+  });
+</script>
+</body>
+</html>
