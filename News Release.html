@@ -1,420 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Seminar Announcement</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc;
-        }
-        
-        .header-gradient {
-            background: linear-gradient(135deg, #0d9488 0%, #115e59 100%);
-        }
-        
-        .contact-table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        
-        .contact-table th, .contact-table td {
-            border: 1px solid #e2e8f0;
-            padding: 12px 15px;
-            text-align: left;
-        }
-        
-        .contact-table th {
-            background-color: #0f766e;
-            color: white;
-            font-weight: 600;
-        }
-        
-        .contact-table tr:nth-child(even) {
-            background-color: #f1f5f9;
-        }
-        
-        .contact-table tr:hover {
-            background-color: #e2e8f0;
-        }
-        
-        .highlight-box {
-            background-color: #f0fdfa;
-            border-left: 4px solid #0d9488;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .quote-box {
-            background-color: #f8fafc;
-            border-left: 4px solid #0d9488;
-            padding: 20px;
-            margin: 25px 0;
-            font-style: italic;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .event-details {
-            color: black;
-            padding: 25px;
-            border-radius: 12px;
-            margin: 25px 0;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8fafc;
+      }
+
+      .header-gradient {
+        background: linear-gradient(135deg, #0d9488 0%, #115e59 100%);
+      }
+
+      .contact-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-table th,
+      .contact-table td {
+        border: 1px solid #e2e8f0;
+        padding: 12px 15px;
+        text-align: left;
+      }
+
+      .contact-table th {
+        background-color: #0f766e;
+        color: white;
+        font-weight: 600;
+      }
+
+      .contact-table tr:nth-child(even) {
+        background-color: #f1f5f9;
+      }
+
+      .contact-table tr:hover {
+        background-color: #e2e8f0;
+      }
+
+      .highlight-box {
+        background-color: #f0fdfa;
+        border-left: 4px solid #0d9488;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .quote-box {
+        background-color: #f8fafc;
+        border-left: 4px solid #0d9488;
+        padding: 20px;
+        margin: 25px 0;
+        font-style: italic;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .event-details {
+        color: black;
+        padding: 25px;
+        border-radius: 12px;
+        margin: 25px 0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
     </style>
-</head>
-<body class="min-h-screen flex flex-col">
-  <nav class="bg-teal-700 text-white shadow-lg relative">
-  <div class="container mx-auto px-2">
-    <div class="flex justify-between items-center py-3">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <a href="/index.html" class="flex items-center space-x-1">
-          <i class="fas fa-ribbon text-lg text-teal-200"></i>
-          <span class="font-semibold text-sm sm:text-base">YouthHIV Awareness</span>
-        </a>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <nav class="bg-teal-700 text-white shadow-lg relative">
+      <div class="container mx-auto px-2">
+        <div class="flex justify-between items-center py-3">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <a href="/index.html" class="flex items-center space-x-1">
+              <i class="fas fa-ribbon text-lg text-teal-200"></i>
+              <span class="font-semibold text-xl sm:text-base"
+                >YouthHIV Awareness</span
+              >
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex flex-wrap space-x-4 text-md">
+            <a
+              href="/index.html"
+              class="py-1 px-2 rounded hover:bg-teal-600 transition"
+              >Home</a
+            >
+            <a
+              href="/purpose.html"
+              class="py-1 px-2 rounded hover:bg-teal-600 transition"
+              >Our Purpose</a
+            >
+            <a
+              href="/partner.html"
+              class="py-1 px-2 rounded hover:bg-teal-600 transition"
+              >Our Partners</a
+            >
+            <a
+              href="/resume2.html"
+              class="py-1 px-2 rounded hover:bg-teal-600 transition"
+              >Resume</a
+            >
+            <a
+              href="/contact.html"
+              class="py-1 px-2 rounded hover:bg-teal-600 transition"
+              >Contact</a
+            >
+            <div class="relative group">
+              <button
+                class="py-1 px-2 rounded hover:bg-teal-600 transition flex items-center"
+              >
+                Resources
+                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </button>
+
+              <div
+                class="absolute left-0 mt-2 w-72 bg-teal-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+              >
+                <a
+                  href="/Brochure%20with%20Pretest%20Results.html"
+                  class="block py-2 px-4 hover:bg-teal-600 rounded-t-lg transition"
+                  >Brochure with Pretest Results</a
+                >
+                <a
+                  href="/Literature%20Review.html"
+                  class="block py-2 px-4 hover:bg-teal-600 transition"
+                  >Literature Review</a
+                >
+                <a
+                  href="/Public%20Service%20Announcement.html"
+                  class="block py-2 px-4 hover:bg-teal-600 rounded-b-lg transition"
+                  >Public Service Announcement</a
+                >
+                <a
+                  href="/MarketingPlan.html"
+                  class="block py-2 px-4 hover:bg-teal-600 rounded-b-lg transition"
+                  >Marketing plan</a
+                >
+              </div>
+            </div>
+            <a
+              href="/News%20Release.html"
+              class="py-1 px-2 rounded hover:bg-teal-600 transition"
+              >News Release</a
+            >
+
+            <!-- Resources Dropdown -->
+            <!-- <div class="relative group">
+          <button class="py-1 px-2 rounded hover:bg-teal-600 transition flex items-center">
+            Resources
+            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </button>
+
+          <div class="absolute left-0 mt-2 w-72 bg-teal-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="/Brochure%20with%20Pretest%20Results.html" class="block py-2 px-4 hover:bg-teal-600 rounded-t-lg transition">Brochure with Pretest Results</a>
+            <a href="/Literature%20Review.html" class="block py-2 px-4 hover:bg-teal-600 transition">Literature Review</a>
+            <a href="/Public%20Service%20Announcement.html" class="block py-2 px-4 hover:bg-teal-600 rounded-b-lg transition">Public Service Announcement</a>
+          </div>
+        </div> -->
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button id="menu-btn" class="outline-none">
+              <i class="fas fa-bars text-lg"></i>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- Desktop Menu -->
-      <div class="hidden lg:flex flex-wrap space-x-4 text-xs">
-        <a href="/index.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Home</a>
-        <a href="/purpose.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Our Purpose</a>
-        <a href="/partner.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Our Partners</a>
-        <a href="/resume2.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Resume</a>
-        <a href="/contact.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Contact</a>
-        <a href="/News%20Release.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">News Release</a>
-        <a href="/Brochure%20with%20Pretest%20Results.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Brochure with Pretest Results</a>
-        <a href="/Literature%20Review.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Literature Review</a>
-        <a href="/Public%20Service%20Announcement.html" class="py-1 px-2 rounded hover:bg-teal-600 transition">Public Service Announcement</a>
+      <!-- Mobile Sidebar Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 z-50"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-teal-600"
+        >
+          <h2 class="font-bold text-lg">Menu</h2>
+          <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+        </div>
+
+        <ul class="flex flex-col p-4 space-y-3 text-sm">
+          <li>
+            <a
+              href="/index.html"
+              class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/purpose.html"
+              class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+              >Our Purpose</a
+            >
+          </li>
+          <li>
+            <a
+              href="/partner.html"
+              class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+              >Our Partners</a
+            >
+          </li>
+          <li>
+            <a
+              href="/resume2.html"
+              class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact.html"
+              class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="/News%20Release.html"
+              class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+              >News Release</a
+            >
+          </li>
+
+          <!-- Mobile Resources Dropdown -->
+          <li class="relative">
+            <button
+              id="mobile-resources-btn"
+              class="w-[120px] text-left py-2 px-3 rounded hover:bg-teal-600 transition flex justify-between items-center"
+            >
+              Resources
+              <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+
+            <ul
+              id="mobile-resources-dropdown"
+              class="ml-4 mt-2 space-y-2 hidden"
+            >
+              <li>
+                <a
+                  href="/Brochure%20with%20Pretest%20Results.html"
+                  class="block py-2 px-3 rounded hover:bg-teal-600 transition text-xs"
+                  >Brochure with Pretest Results</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Literature%20Review.html"
+                  class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                  >Literature Review</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Public%20Service%20Announcement.html"
+                  class="block py-2 px-3 rounded hover:bg-teal-600 transition text-xs"
+                  >Public Service Announcement</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/MarketingPlan.html"
+                  class="block py-2 px-3 rounded hover:bg-teal-600 transition text-xs"
+                  >Marketing plan</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <!-- Mobile Menu Button -->
-      <div class="lg:hidden">
-        <button id="menu-btn" class="outline-none">
-          <i class="fas fa-bars text-lg"></i>
-        </button>
-      </div>
-    </div>
-  </div>
+    <!-- JS for Mobile Dropdown -->
+    <script>
+      // Sidebar open/close
+      document.getElementById("menu-btn").onclick = () => {
+        document
+          .getElementById("mobile-menu")
+          .classList.remove("-translate-x-full");
+      };
 
-  <!-- Mobile Sidebar Menu -->
-  <div id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 z-50">
-    <div class="flex justify-between items-center p-4 border-b border-teal-600">
-      <h2 class="font-bold text-lg">Menu</h2>
-      <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
-    </div>
-    <ul class="flex flex-col p-4 space-y-3 text-sm">
-      <li><a href="/index.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Home</a></li>
-      <li><a href="/purpose.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Our Purpose</a></li>
-      <li><a href="/partner.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Our Partners</a></li>
-      <li><a href="/resume2.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Resume</a></li>
-      <li><a href="/contact.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Contact</a></li>
-      <li><a href="/News%20Release.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">News Release</a></li>
-      <li><a href="/Brochure%20with%20Pretest%20Results.html" class="block py-2 px-3 text-xs rounded hover:bg-teal-600 transition">Brochure with Pretest Results</a></li>
-      <li><a href="/Literature%20Review.html" class="block py-2 px-3 rounded hover:bg-teal-600 transition">Literature Review</a></li>
-      <li><a href="/Public%20Service%20Announcement.html" class="block text-xs py-2 px-3 rounded hover:bg-teal-600 transition">Public Service Announcement</a></li>
-    </ul>
-  </div>
-</nav>
+      document.getElementById("close-btn").onclick = () => {
+        document
+          .getElementById("mobile-menu")
+          .classList.add("-translate-x-full");
+      };
 
+      // Resources dropdown (Mobile)
+      document.getElementById("mobile-resources-btn").onclick = () => {
+        const dropdown = document.getElementById("mobile-resources-dropdown");
+        dropdown.classList.toggle("hidden");
+      };
+    </script>
 
     <!-- Main Content -->
     <main class="flex-grow container mx-auto px-4 py-8">
-        <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
-            <!-- Header Section -->
-            <div class="header-gradient text-white py-8 px-6 text-center">
-                <h1 class="text-xl md:text-4xl font-bold mb-2 ">Healthy Futures Initiative</h1>
-                <p class="text-teal-100 text-lg">Public Health Communications Office</p>
-            </div>
-            
-            <!-- Content Section -->
-            <div class="p-6 md:p-8">
-                <!-- Press Release Header -->
-                <div class="mb-8 text-center">
-                    <h2 class="md:text-2xl text-xl font-bold text-teal-900 mb-2">FOR IMMEDIATE RELEASE</h2>
-                    <p class="text-gray-600">Date: November 15, 2025</p>
-                </div>
-                
-                <!-- Event Title -->
-                <h3 class="md:text-2xl text-md font-bold text-teal-800 mb-6 text-center border-b pb-4">
-                    The seminar on Assessing HIV status Among High school and college students in relation to HIV prevention
-                </h3>
-                
- <!-- Event Details -->
- <!-- Event Details Card -->
-                <div class="seminar-card rounded-2xl shadow-md border border-teal-100 p-6 md:p-8 mb-8">
-                    <h4 class="text-xl font-semibold mb-6 text-teal-800">Event Information</h4>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4">
-                                    <i class="fas fa-calendar-alt"></i>
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-teal-900">Date</p>
-                                    <p class="text-gray-700">December 6, 2025</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-teal-900">Time</p>
-                                    <p class="text-gray-700">10 a.m. - 2 p.m.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-teal-900">Location</p>
-                                    <p class="text-gray-700">Springfield Community Health Center</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4">
-                                    <i class="fas fa-city"></i>
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-teal-900">City</p>
-                                    <p class="text-gray-700">Springfield, IL</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-               
-                </div>
-
-<!-- Add this script before closing body tag -->
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
-
-                
-                <!-- Contact Table -->
-                <div class="my-8">
-                    <h4 class="text-xl font-bold text-teal-800 mb-4"> Contact Information</h4>
-                    <table class="contact-table">
-                        <thead>
-                            <tr>
-                                <th>Contact</th>
-                                <th>Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-sm">Email</td>
-                                <td class="text-xs md:text-lg">unsebashoaib.11@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td class="text-sm">Phone</td>
-                                <td class="text-sm">+1 (773) 739-7989</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <!-- Press Release Content -->
-                <div class="prose max-w-none">
-                    <p class="mb-4 text-gray-700">
-                        Springfield, IL --- An educational seminar named Knowing Is Prevention:
-                        Assessing HIV Status Among High School and College Students will be
-                        conducted on December 6, 2025, between 10 a.m. and 2 p.m. at the
-                        Springfield Community Health Center. The incident is correlated with the
-                        Healthy People 2030 objective of helping to decrease new HIV cases as
-                        well as encouraging regular testing among adolescents and young adults.
-                    </p>
-                    
-                    <p class="mb-4 text-gray-700">
-                        The program will offer evidence-based information to the participants on
-                        HIV prevention and testing among the youth, which is clear. Recent
-                        statistics released by the Centers for Disease Control and Prevention
-                        (CDC, 2024) indicate positive news on the national level: the estimated
-                        number of new HIV infections dropped by 12% during 2018-2022, and the
-                        number of new infections among people aged 13--24 years decreased by
-                        30%. The enhancement is due to increased testing and preventive
-                        education in the country.
-                    </p>
-                    
-                    <div class="highlight-box">
-                        <p class="mb-4 text-gray-700">
-                            Even with this advancement, a large number of youths are oblivious of
-                            whether they are HIV positive or not. According to the CDC, it is
-                            estimated that one point two million individuals in the United States
-                            are living with diagnosed or undiagnosed HIV. HIV status awareness has
-                            risen by 86 to 87 percent between 2018 and 2022, but disparities remain
-                            because of stigma, false information, and unequal access to health
-                            services. These barriers will be discussed and illustrated during the
-                            seminar.
-                        </p>
-                    </div>
-                    
-                    <p class="mb-4 text-gray-700">
-                        The presentation in the event will be by the inverted pyramid writing
-                        and presentation method- proceeding with the most vital information
-                        first- to reflect the way the health reporters structure their stories.
-                        The participants will know who is most impacted by the existing trends,
-                        the most efficient preventive measures to use, where local testing
-                        services can be found, when they should be tested, and why awareness is
-                        crucial to the young population.
-                    </p>
-                    
-                    <p class="mb-4 text-gray-700">
-                        A seminar session will be used to point out the social and economic
-                        injustices that contribute to the HIV disparities. The organizers will
-                        also underline the factors of fairness and inclusivity, whereby the
-                        prevention and testing programs will be extended to all student groups
-                        irrespective of background. The remaining sessions will be on how
-                        educational facilities will create confidential and stigma-free testing
-                        conditions that will facilitate the early detection and care.
-                    </p>
-                    
-                    <p class="mb-4 text-gray-700">
-                        Universal Intellectual Standards will be implemented by making
-                        residential seminar content straightforward, simple, and comprehensible,
-                        valid by using reliable CDC statistics, pertinent by focusing on
-                        juvenile health, and comprehensive by including the views of various
-                        communities.
-                    </p>
-                    
-                    <p class="mb-4 text-gray-700">
-                        The recommendations include the expansion of access to tests of
-                        confidentiality on campus, HIV education to be included in school health
-                        education, and peer-led prevention programs. These steps will contribute
-                        to the Healthy People 2030 objective of increasing the number of those
-                        who know their HIV status.
-                    </p>
-                    
-                    <p class="mb-4 text-gray-700">
-                        The aim of the seminar is not merely to pass information but also to
-                        create community interest. They will be provided with educational
-                        resources, advice on local prevention services, and actions to arrange
-                        school-based awareness programs. The event will try to substitute fear
-                        with empowerment by spreading accurate information and by encouraging
-                        open conversation and making HIV testing a normal aspect of health care.
-                    </p>
-                    
-                    <div class="quote-box">
-                        <p class="mb-2 text-gray-700">
-                            "Expanding HIV testing, PrEP, and treatment have been effective, but
-                            progress must be faster to end new HIV infections. We must focus on
-                            addressing inequities and their drivers, including racism and social
-                            determinants of health. Whole person approaches to prevention, care, and
-                            treatment must reach all people equitably."
-                        </p>
-                        <p class="text-right font-semibold text-teal-700 text-sm md:text-xl">Robyn Neblett Fanfair, MD, MPH, CDC</p>
-                    </div>
-                    
-                    <div class="bg-teal-50 p-4 rounded-lg border border-teal-200 mt-6">
-                        <h4 class="font-bold text-teal-800 mb-2">Tag</h4>
-                        <p class="text-gray-700">
-                            The Healthy Futures Initiative represents a community-based public
-                            health agency that aims to support the objectives of the Healthy People
-                            2030 through enhancing health literacy and ensuring fair access to
-                            preventive medicine among young adults and youth.
-                        </p>
-                    </div>
-                    
-                    <div class="mt-8 pt-6 border-t border-gray-200">
-                        <p class="text-sm text-gray-600">
-                            Centers for Disease Control and Prevention. (2024, May 21). <em>Estimated
-                            HIV incidence and prevalence in the United States, 2018-2022.</em> National
-                            Center for HIV, Viral Hepatitis, STD, and Tuberculosis Prevention.
-                            &lt;https://www.cdc.gov/hiv/library/reports/hiv-surveillance.html&gt;
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div
+        class="max-w-5xl mx-auto bg-white rounded-xl shadow-md overflow-hidden"
+      >
+        <!-- Header Section -->
+        <div class="header-gradient text-white py-8 px-6 text-center">
+          <h1 class="text-xl md:text-4xl font-bold mb-2">
+            Healthy Futures Initiative
+          </h1>
+          <p class="text-teal-100 text-lg">
+            Public Health Communications Office
+          </p>
         </div>
+
+        <!-- Content Section -->
+        <div class="p-6 md:p-8">
+          <!-- Press Release Header -->
+          <div class="mb-8 text-center">
+            <h2 class="md:text-2xl text-xl font-bold text-teal-900 mb-2">
+              FOR IMMEDIATE RELEASE
+            </h2>
+            <p class="text-gray-600">Date: November 15, 2025</p>
+          </div>
+
+          <!-- Event Title -->
+          <h3
+            class="md:text-2xl text-md font-bold text-teal-800 mb-6 text-center border-b pb-4"
+          >
+            The seminar on Assessing HIV status Among High school and college
+            students in relation to HIV prevention
+          </h3>
+
+          <!-- Event Details -->
+          <!-- Event Details Card -->
+          <div
+            class="seminar-card rounded-2xl shadow-md border border-teal-100 p-6 md:p-8 mb-8"
+          >
+            <h4 class="text-xl font-semibold mb-6 text-teal-800">
+              Event Information
+            </h4>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4"
+                  >
+                    <i class="fas fa-calendar-alt"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-teal-900">Date</p>
+                    <p class="text-gray-700">December 6, 2025</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4"
+                  >
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-teal-900">Time</p>
+                    <p class="text-gray-700">10 a.m. - 2 p.m.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-teal-900">Location</p>
+                    <p class="text-gray-700">
+                      Springfield Community Health Center
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mr-4"
+                  >
+                    <i class="fas fa-city"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-teal-900">City</p>
+                    <p class="text-gray-700">Springfield, IL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add this script before closing body tag -->
+          <script src="https://unpkg.com/lucide@latest"></script>
+          <script>
+            lucide.createIcons();
+          </script>
+
+          <!-- Contact Table -->
+          <div class="my-8">
+            <h4 class="text-xl font-bold text-teal-800 mb-4">
+              Contact Information
+            </h4>
+            <table class="contact-table">
+              <thead>
+                <tr>
+                  <th>Contact</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-sm">Email</td>
+                  <td class="text-xs md:text-lg">unsebashoaib.11@gmail.com</td>
+                </tr>
+                <tr>
+                  <td class="text-sm">Phone</td>
+                  <td class="text-sm">+1 (773) 739-7989</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Press Release Content -->
+          <div class="prose max-w-none">
+            <p class="mb-4 text-gray-700">
+              Springfield, IL --- An educational seminar named Knowing Is
+              Prevention: Assessing HIV Status Among High School and College
+              Students will be conducted on December 6, 2025, between 10 a.m.
+              and 2 p.m. at the Springfield Community Health Center. The
+              incident is correlated with the Healthy People 2030 objective of
+              helping to decrease new HIV cases as well as encouraging regular
+              testing among adolescents and young adults.
+            </p>
+
+            <p class="mb-4 text-gray-700">
+              The program will offer evidence-based information to the
+              participants on HIV prevention and testing among the youth, which
+              is clear. Recent statistics released by the Centers for Disease
+              Control and Prevention (CDC, 2024) indicate positive news on the
+              national level: the estimated number of new HIV infections dropped
+              by 12% during 2018-2022, and the number of new infections among
+              people aged 13--24 years decreased by 30%. The enhancement is due
+              to increased testing and preventive education in the country.
+            </p>
+
+            <div class="highlight-box">
+              <p class="mb-4 text-gray-700">
+                Even with this advancement, a large number of youths are
+                oblivious of whether they are HIV positive or not. According to
+                the CDC, it is estimated that one point two million individuals
+                in the United States are living with diagnosed or undiagnosed
+                HIV. HIV status awareness has risen by 86 to 87 percent between
+                2018 and 2022, but disparities remain because of stigma, false
+                information, and unequal access to health services. These
+                barriers will be discussed and illustrated during the seminar.
+              </p>
+            </div>
+
+            <p class="mb-4 text-gray-700">
+              The presentation in the event will be by the inverted pyramid
+              writing and presentation method- proceeding with the most vital
+              information first- to reflect the way the health reporters
+              structure their stories. The participants will know who is most
+              impacted by the existing trends, the most efficient preventive
+              measures to use, where local testing services can be found, when
+              they should be tested, and why awareness is crucial to the young
+              population.
+            </p>
+
+            <p class="mb-4 text-gray-700">
+              A seminar session will be used to point out the social and
+              economic injustices that contribute to the HIV disparities. The
+              organizers will also underline the factors of fairness and
+              inclusivity, whereby the prevention and testing programs will be
+              extended to all student groups irrespective of background. The
+              remaining sessions will be on how educational facilities will
+              create confidential and stigma-free testing conditions that will
+              facilitate the early detection and care.
+            </p>
+
+            <p class="mb-4 text-gray-700">
+              Universal Intellectual Standards will be implemented by making
+              residential seminar content straightforward, simple, and
+              comprehensible, valid by using reliable CDC statistics, pertinent
+              by focusing on juvenile health, and comprehensive by including the
+              views of various communities.
+            </p>
+
+            <p class="mb-4 text-gray-700">
+              The recommendations include the expansion of access to tests of
+              confidentiality on campus, HIV education to be included in school
+              health education, and peer-led prevention programs. These steps
+              will contribute to the Healthy People 2030 objective of increasing
+              the number of those who know their HIV status.
+            </p>
+
+            <p class="mb-4 text-gray-700">
+              The aim of the seminar is not merely to pass information but also
+              to create community interest. They will be provided with
+              educational resources, advice on local prevention services, and
+              actions to arrange school-based awareness programs. The event will
+              try to substitute fear with empowerment by spreading accurate
+              information and by encouraging open conversation and making HIV
+              testing a normal aspect of health care.
+            </p>
+
+            <div class="quote-box">
+              <p class="mb-2 text-gray-700">
+                "Expanding HIV testing, PrEP, and treatment have been effective,
+                but progress must be faster to end new HIV infections. We must
+                focus on addressing inequities and their drivers, including
+                racism and social determinants of health. Whole person
+                approaches to prevention, care, and treatment must reach all
+                people equitably."
+              </p>
+              <p
+                class="text-right font-semibold text-teal-700 text-sm md:text-xl"
+              >
+                Robyn Neblett Fanfair, MD, MPH, CDC
+              </p>
+            </div>
+
+            <div class="bg-teal-50 p-4 rounded-lg border border-teal-200 mt-6">
+              <h4 class="font-bold text-teal-800 mb-2">Tag</h4>
+              <p class="text-gray-700">
+                The Healthy Futures Initiative represents a community-based
+                public health agency that aims to support the objectives of the
+                Healthy People 2030 through enhancing health literacy and
+                ensuring fair access to preventive medicine among young adults
+                and youth.
+              </p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-200">
+              <p class="text-sm text-gray-600">
+                Centers for Disease Control and Prevention. (2024, May 21).
+                <em
+                  >Estimated HIV incidence and prevalence in the United States,
+                  2018-2022.</em
+                >
+                National Center for HIV, Viral Hepatitis, STD, and Tuberculosis
+                Prevention.
+                &lt;https://www.cdc.gov/hiv/library/reports/hiv-surveillance.html&gt;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <!-- Footer with Contact -->
     <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
-                    <p class="text-gray-400">Assessing HIV Status Among High School and College Students in Relation to HIV Prevention.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="/index.html" class="text-gray-400 hover:text-teal-300 transition">HOME</a></li>
-                        <li><a href="/purpose.html" class="text-gray-400 hover:text-teal-300 transition">Our Purpose</a></li>
-                        <li><a href="/partner.html" class="text-gray-400 hover:text-teal-300 transition">Our Partners</a></li>
-                        <li><a href="/resume2.html" class="text-gray-400 hover:text-teal-300 transition">Resume</a></li>
-                        <li><a href="/contact.html" class="text-gray-400 hover:text-teal-300 transition">Contact Us</a></li>
-                        <li><a href="/News%20Release.html" class="text-gray-400 hover:text-teal-300 transition">News Release</a></li>
-                 <li><a href="/Literature%20Review.html" class="text-gray-400 hover:text-teal-300 transition">Literature Review</a></li>
-                 <li><a href="/Brochure%20with%20Pretest%20Results.html" class="text-gray-400 hover:text-teal-300 transition"> Brochure with Pretest Results</a></li>
-                
-                 <li><a href="/Public%20Service%20Announcement.html" class="text-gray-400 hover:text-teal-300 transition">Public Service Announcement</a></li>
-                        
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
-                     <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>Morton Grove, IL 60053</span>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-phone mt-1 mr-3"></i>
-                            <span>+1 (773) 739-7989</span>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-3"></i>
-                            <span>unsebashoaib.11@gmail.com</span>
-                        </div>
-                       
-                    </div>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+            <p class="text-gray-400">
+              Assessing HIV Status Among High School and College Students in
+              Relation to HIV Prevention.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/index.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/purpose.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Our Purpose</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/partner.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Our Partners</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/resume2.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Resume</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/News%20Release.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >News Release</a
+                >
+              </li>
+
+              <!-- Resources Dropdown -->
+              <li class="relative">
+                <button
+                  id="footer-resources-btn"
+                  class="w-[56px] text-left text-gray-400 hover:text-teal-300 transition flex justify-between items-center"
+                >
+                  Resources
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+                <ul
+                  id="footer-resources-dropdown"
+                  class="ml-4 mt-2 space-y-2 hidden"
+                >
+                  <li>
+                    <a
+                      href="/Literature%20Review.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Literature Review</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/MarketingPlan.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Marketing plan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Brochure%20with%20Pretest%20Results.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Brochure with Pretest Results</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Public%20Service%20Announcement.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Public Service Announcement</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Morton Grove, IL 60053</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3"></i>
+                <span>+1 (773) 739-7989</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>unsebashoaib.11@gmail.com</span>
+              </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
+    <script>
+      document.getElementById("footer-resources-btn").onclick = () => {
+        const dropdown = document.getElementById("footer-resources-dropdown");
+        dropdown.classList.toggle("hidden");
+      };
+    </script>
 
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
 
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("-translate-x-full");
+      });
 
-
-
-
-
-  <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const closeBtn = document.getElementById('close-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('-translate-x-full');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('-translate-x-full');
-  });
-</script>
-</body>
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("-translate-x-full");
+      });
+    </script>
+  </body>
 </html>
