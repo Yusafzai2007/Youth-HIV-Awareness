@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIV Intervention Program Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #0d9488 0%, #115e59 100%);
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #0d9488;
+        }
+        .table-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .table-header {
+            background-color: #0f766e;
+            color: white;
+        }
+        .table-row:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+        .table-row:hover {
+            background-color: #e2e8f0;
+        }
+        .highlight-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid #0d9488;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .reference-link {
+            color: #0f766e;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <nav class="bg-teal-700 text-white shadow-lg relative">
+        <div class="container mx-auto px-2">
+          <div class="flex justify-between items-center py-3">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+              <a href="/index.html" class="flex items-center space-x-1">
+                <i class="fas fa-ribbon text-lg text-teal-200"></i>
+                <span class="font-semibold text-xl sm:text-base"
+                  >YouthHIV Awareness</span
+                >
+              </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex flex-wrap space-x-4 text-md">
+              <a
+                href="/index.html"
+                class="py-1 px-2 rounded hover:bg-teal-600 transition"
+                >Home</a
+              >
+              <a
+                href="/purpose.html"
+                class="py-1 px-2 rounded hover:bg-teal-600 transition"
+                >Our Purpose</a
+              >
+              <a
+                href="/partner.html"
+                class="py-1 px-2 rounded hover:bg-teal-600 transition"
+                >Our Partners</a
+              >
+              <a
+                href="/resume2.html"
+                class="py-1 px-2 rounded hover:bg-teal-600 transition"
+                >Resume</a
+              >
+              <a
+                href="/contact.html"
+                class="py-1 px-2 rounded hover:bg-teal-600 transition"
+                >Contact</a
+              >
+              <div class="relative group">
+                <button
+                  class="py-1 px-2 rounded hover:bg-teal-600 transition flex items-center"
+                >
+                  Resources
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+
+                <div
+                  class="absolute left-0 mt-2 w-72 bg-teal-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+                >
+                 <a
+                    href="/Literature%20Review.html"
+                    class="block py-2 px-4 hover:bg-teal-600 transition"
+                    >Literature Review</a
+                  >
+                   <a
+                    href="/Public%20Service%20Announcement.html"
+                    class="block py-2 px-4 hover:bg-teal-600 rounded-b-lg transition"
+                    >Public Service Announcement</a
+                  >
+                   <a
+                href="/News%20Release.html"
+                    class="block py-2 px-4 hover:bg-teal-600 rounded-t-lg transition"
+                >News Release</a
+              >
+                  <a
+                    href="/Brochure%20with%20Pretest%20Results.html"
+                    class="block py-2 px-4 hover:bg-teal-600 rounded-t-lg transition"
+                    >Brochure with Pretest Results</a
+                  >
+                 
+                 
+                  <a
+                    href="/MarketingPlan.html"
+                    class="block py-2 px-4 hover:bg-teal-600 rounded-b-lg transition"
+                    >Marketing plan</a
+                  >
+                </div>
+              </div>
+              <a
+                href="/Intervention-Program.html"
+                class="py-1 px-2 rounded hover:bg-teal-600 transition"
+                >Intervention-Program-Plan</a
+              >
+
+              <!-- Resources Dropdown -->
+              <!-- <div class="relative group">
+          <button class="py-1 px-2 rounded hover:bg-teal-600 transition flex items-center">
+            Resources
+            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </button>
+
+          <div class="absolute left-0 mt-2 w-72 bg-teal-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="/Brochure%20with%20Pretest%20Results.html" class="block py-2 px-4 hover:bg-teal-600 rounded-t-lg transition">Brochure with Pretest Results</a>
+            <a href="/Literature%20Review.html" class="block py-2 px-4 hover:bg-teal-600 transition">Literature Review</a>
+            <a href="/Public%20Service%20Announcement.html" class="block py-2 px-4 hover:bg-teal-600 rounded-b-lg transition">Public Service Announcement</a>
+          </div>
+        </div> -->
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button id="menu-btn" class="outline-none">
+                <i class="fas fa-bars text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Sidebar Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed top-0 left-0 w-64 h-full bg-teal-800 text-white transform -translate-x-full transition-transform duration-300 z-50"
+        >
+          <div
+            class="flex justify-between items-center p-4 border-b border-teal-600"
+          >
+            <h2 class="font-bold text-lg">Menu</h2>
+            <button id="close-btn"><i class="fas fa-times text-xl"></i></button>
+          </div>
+
+          <ul class="flex flex-col p-4 space-y-3 text-sm">
+            <li>
+              <a
+                href="/index.html"
+                class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/purpose.html"
+                class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                >Our Purpose</a
+              >
+            </li>
+            <li>
+              <a
+                href="/partner.html"
+                class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                >Our Partners</a
+              >
+            </li>
+            <li>
+              <a
+                href="/resume2.html"
+                class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact.html"
+                class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                >Contact</a
+              >
+            </li>
+           
+
+            <!-- Mobile Resources Dropdown -->
+            <li class="relative">
+              <button
+                id="mobile-resources-btn"
+                class="w-[120px] text-left py-2 px-3 rounded hover:bg-teal-600 transition flex justify-between items-center"
+              >
+                Resources
+                <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+
+              <ul
+                id="mobile-resources-dropdown"
+                class="ml-4 mt-2 space-y-2 hidden"
+              >
+                <li>
+                  <a
+                    href="/Literature%20Review.html"
+                    class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                    >Literature Review</a
+                  >
+                </li>
+                 <li>
+                  <a
+                    href="/Public%20Service%20Announcement.html"
+                    class="block py-2 px-3 rounded hover:bg-teal-600 transition text-xs"
+                    >Public Service Announcement</a
+                  >
+                </li>
+                  <li>
+              <a
+                href="/News%20Release.html"
+                    class="block py-2 px-3 rounded hover:bg-teal-600 transition text-xs"
+                >News Release</a
+              >
+            </li>
+                <li>
+                  <a
+                    href="/Brochure%20with%20Pretest%20Results.html"
+                    class="block py-2 px-3 rounded hover:bg-teal-600 transition text-xs"
+                    >Brochure with Pretest Results</a
+                  >
+                </li>
+              
+               
+                <li>
+                  <a
+                    href="/MarketingPlan.html"
+                    class="block py-2 px-3 rounded hover:bg-teal-600 transition text-xs"
+                    >Marketing plan</a
+                  >
+                </li>
+              </ul>
+            </li>
+             <li>
+              <a
+                href="/Intervention-Program.html"
+                class="block py-2 px-3 rounded hover:bg-teal-600 transition"
+                >Intervention-Program-Plan</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- JS for Mobile Dropdown -->
+      <script>
+        // Sidebar open/close
+        document.getElementById("menu-btn").onclick = () => {
+          document
+            .getElementById("mobile-menu")
+            .classList.remove("-translate-x-full");
+        };
+
+        document.getElementById("close-btn").onclick = () => {
+          document
+            .getElementById("mobile-menu")
+            .classList.add("-translate-x-full");
+        };
+
+        // Resources dropdown (Mobile)
+        document.getElementById("mobile-resources-btn").onclick = () => {
+          const dropdown = document.getElementById("mobile-resources-dropdown");
+          dropdown.classList.toggle("hidden");
+        };
+      </script>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="content-card max-w-6xl mx-auto">
+            <!-- Header Section -->
+            <div class="header-gradient text-white py-5 px-6 text-center">
+                <h1 class="text-xl md:text-4xl font-bold mb-3 tracking-tight">INTERVENTION-PROGRAM PLAN</h1>
+                
+            </div>
+
+            <!-- Content Section -->
+            <div class="p-6 md:p-10">
+                <!-- Project Title -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">1. Title of Project:</h2>
+                    <p class="text-lg text-gray-700">Assessing HIV status Among High school and college students in relation to HIV prevention</p>
+                </section>
+
+                <!-- Author -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">2. Author:</h2>
+                    <p class="text-lg text-gray-700">FNU Unseba</p>
+                </section>
+
+                <!-- Problem Statement -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">3. Problem / Need Statement</h2>
+                    <p class="text-gray-700 leading-relaxed">The young people in Cook County, Illinois (15-24 years old) have low HIV testing rates and stigma levels and minimal access to youth-friendly, confidential services. The adolescent population is the least tested, even though it constitutes 21% of new HIV diagnoses (CDC, 2023). Low perceived risk, misinformation, and fear of judgment are some of the factors that lead to delay in diagnosis and spread of the disease within the community. The youth in Cook County are disproportionately affected by African Americans and Latinos. A severe need is observed in a health communication intervention that raises awareness, decreases stigma, and facilitates the availability of testing resources (National Cancer Institute, 2002).</p>
+                </section>
+
+                <!-- Goals -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">4. Goal(s)</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-700">Goal 1</h3>
+                        <p class="text-gray-700">To dramatically raise the number of adolescents and young adults (ages 15--24) who make HIV tests a regular practice in Cook County by actively increasing awareness, decreasing fear and misconceptions, and making information about testing more approachable, youth-sensitive, and culturally relevant (Glick et al., 2020).</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-teal-700">Goal 2</h3>
+                        <p class="text-gray-700">To enhance the general health literacy on HIV among the youth in terms of misinformation through correcting myths, stigma reduction, and making testing an ordinary and routine part of healthy living as an adult.</p>
+                    </div>
+                </section>
+
+                <!-- Objectives -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">5. Objectives</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-700">For Goal 1:</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                            <li>Turn around the proportions of youth, who are capable of naming at least two local locations that provide free so as well as confidential HIV testing, by 30% in half a year following program execution.</li>
+                            <li>Increase the percentage of voluntary HIV testing participation to 20% among partner clinics, on-campus testing events, and CDPH mobile testing units within 12 months.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-teal-700">For Goal 2:</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                            <li>Increase the knowledge of HIV transmission, risk, and testing instructions among students by a quarter of what was observed at pre- and post-intervention surveys.</li>
+                            <li>Lessen perceived HIV stigmatization, such as fear of being judged, embarrassment, or shame about sexual health by 15% following exposure to campaign messages and activities.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Sponsoring Agency -->
+                <section class="mb-8">
+                    <h2 class="md:text-xl text-lg font-bold text-teal-800 mb-4">6. Sponsoring Agency / Contact Person</h2>
+                    <ul class="list-disc pl-6 text-gray-700">
+                        <li><strong>Chicago Department of Public Health (CDPH)</strong><br>HIV/STI Prevention Program Coordinator</li>
+                    </ul>
+                </section>
+
+                <!-- Primary Target Audience -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">7. Primary Target Audience(s)</h2>
+                    <p class="mb-4 text-gray-700"><strong>High school and college students ages 15--24 in Cook County</strong></p>
+                    
+                    <h3 class="text-lg font-semibold mb-2 text-teal-700">Priority Characteristics:</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                        <li>Low HIV testing rates (9--15% have ever tested)</li>
+                        <li>High reliance on social media (TikTok, Instagram, YouTube)</li>
+                        <li>Diverse racial/ethnic backgrounds (African American, Latinx, Asian, immigrant youth)</li>
+                        <li>Concerns about confidentiality</li>
+                        <li>High mobile device usage; preference for short, visual content</li>
+                    </ul>
+                </section>
+
+                <!-- Primary Audience Key Strategies -->
+                <section class="mb-8">
+                    <h2 class="md:text-xl text-lg font-bold text-teal-800 mb-4">8. Primary Audience Key Strategies</h2>
+                    <p class="mb-4 italic text-gray-700">(Audience → Action/Message → Barriers → Benefits → Credentials → Channels)</p>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-semibold text-teal-700">Audience:</h3>
+                            <p class="text-gray-700">Youth in high school and college who are active users of digital media within Cook County and whose lifestyles rely on peer influence and mobile-based communications are aged 15 to 24.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-teal-700">Action/Message:</h3>
+                            <p class="text-gray-700">Promote youth volunteering by encouraging them to undergo testing as a means to get resulted by promoting HIV testing using the message:</p>
+                            <div class="highlight-box">
+                                <p class="italic text-gray-700">"Know your status. Free, fast, confidential HIV testing is available near you. Taking control of your health is a smart, responsible, and empowering decision."</p>
+                            </div>
+                            <p class="text-gray-700">The messages emphasize the fact that testing is easy, confidential, noninvasive, and offered at places that appreciate the concerns of youth.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-teal-700">Barriers:</h3>
+                            <p class="text-gray-700">There are many challenges facing youth: fear of peer or adult judgment, uncertainty over whether the act is confidential, perceived low risk (it will not happen to me), ignorance of where to seek a test, and the cultural or family stigma of discussing sexual health. Others can also be concerned about the impact of a positive test or lack a complete understanding of HIV transmission.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-teal-700">Benefits:</h3>
+                            <p class="text-gray-700">Testing gives tranquility and empowerment, taking charge of one's health, early identification, and access to treatment where necessary. Messaging will also highlight that testing is a healthy and responsible health activity, just like physical check-ups; the privacy of people is safeguarded by confidentiality. It also shows how being aware of your health status helps to allow a healthy relationship and helps the community in its welfare.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-teal-700">Credentials:</h3>
+                            <p class="text-gray-700">Messages will be endorsed by the Chicago Department of Public Health, local health professionals, school-based health centers, youth peer ambassadors, and respected community youth organizations. Reliable and familiar sources are more credible, reassuring, and attractive to use.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-teal-700">Channels:</h3>
+                            <p class="text-gray-700">TikTok videos, Instagram Reels, Snapchat stories, YouTube shorts, digital posters, school-based announcements, and other communication platforms young people prefer. Peer ambassadors will communicate content using student groups, health clubs, and school events. Posters containing QR coded will be placed on campus, which will bring them to information about the testing sites.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Secondary Target Audience -->
+                <section class="mb-8">
+                    <h2 class="md:text-xl text-lg font-bold text-teal-800 mb-4">9. Secondary Target Audience(s)</h2>
+                    <ol class="list-decimal pl-6 space-y-2 text-gray-700">
+                        <li><strong>Parents & caregivers</strong>: Influence attitudes and support for health decisions.</li>
+                        <li><strong>School administrators & health educators</strong>: Key gatekeepers for school-based access.</li>
+                        <li><strong>Community youth organizations</strong>: Provide safe spaces for outreach.</li>
+                    </ol>
+                </section>
+
+                <!-- Secondary Audience Key Strategies -->
+                <section class="mb-8">
+                    <h2 class="md:text-xl text-md font-bold text-teal-800 mb-4">10. Secondary Audience Key Strategies</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-700">Audience: Parents & Caregivers</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-medium text-gray-700">Action/Message:</h4>
+                                <p class="text-gray-700">Build their case about the need to facilitate their teen to receive accurate HIV information and regular testing as preventive health measures. Stress that HIV can potentially impact any youth with or without a background, and that an early diagnosis results in improved long-term health.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">Barriers:</h4>
+                                <p class="text-gray-700">Cultural hesitation in discussing sexual health, the perception that their child is not sexually active, the stigma, and a lack of knowledge about HIV.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">Benefits:</h4>
+                                <p class="text-gray-700">They are protecting the long-term health of their child, allowing early treatment in case of need, and encouraging supportive, open communication in families.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">Credentials:</h4>
+                                <p class="text-gray-700">CDPH officers, pediatricians, and school nurses.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">Channels:</h4>
+                                <p class="text-gray-700">Parent newsletters, PTA meetings, informational flyers, community workshops, Facebook groups.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-teal-700">Audience: School Administrators & Health Staff</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-medium text-gray-700">Action/Message:</h4>
+                                <p class="text-gray-700">Influence alliances with CDPH to conduct on-campus testing events, include educating on HIV in health courses, and safe, confidential spaces where students can access information.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">Barriers:</h4>
+                                <p class="text-gray-700">Parental resistance, school policy restrictions, time constraints, or unavailability of staff.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">Benefits:</h4>
+                                <p class="text-gray-700">Good for student well-being, minimizes health disparities, improves school health achievement, and proactive school culture.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">Channels:</h4>
+                                <p class="text-gray-700">Email outreach, online presentations, personnel meetings, and formal letters by CDPH.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pretest Strategy -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">11. Pretest Strategy</h2>
+                    <p class="text-gray-700">Test message and materials with a small sample group of 20-40 participating schools and colleges based on a sample of youth. Young people will go through sample TikToks, poster designs, and short messages. Clarity, relatability, cultural appropriateness, level of motivation, and a sense of a judgment-free tone will be assessed using focus groups and brief Internet surveys. Changes will be undertaken to make the communication sound natural and interesting to young people.</p>
+                </section>
+
+                <!-- Theory Foundation -->
+                <section class="mb-8">
+                    <h2 class="md:text-xl text-md font-bold text-teal-800 mb-4">12. Theory Foundation - Health Belief Model (HBM)</h2>
+                    <p class="mb-4 text-gray-700">The intervention applies the HBM to the beliefs and actions of youth:</p>
+                    
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                        <li><strong>Perceived Susceptibility</strong>: The messages clarify the actual statistics about the youth being vulnerable to HIV, outlining that most of the infected youth had thought they were not susceptible to it.</li>
+                        <li><strong>Perceived Severity:</strong> Short personal narratives show the long-term impacts of late diagnosis on health and life opportunities.</li>
+                        <li><strong>Perceived Benefits</strong>: Highlight the ease, secretiveness, and power derived through being aware of one's status.</li>
+                        <li><strong>Perceived Barriers:</strong> There is a clear explanation to minimize fear and stigma, particularly regarding privacy.</li>
+                        <li><strong>Action Cues:</strong> Reminders about social media, peer testimonials, and school-based reminders promote testing.</li>
+                        <li><strong>Self-Efficacy:</strong> Sometimes, tutorials and step-by-step instructions are used to allow the youth to feel confident in case they want to use testing services.</li>
+                    </ul>
+                </section>
+
+                <!-- Management Chart -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">13. Management Chart</h2>
+                    
+                    <!-- Desktop Table -->
+                    <div class="hidden md:block overflow-x-auto table-container">
+                        <table class="min-w-full">
+                            <thead>
+                                <tr class="table-header bg-teal-700">
+                                    <th class="py-3 px-4 text-left font-semibold">Task</th>
+                                    <th class="py-3 px-4 text-left font-semibold">Timeline</th>
+                                    <th class="py-3 px-4 text-left font-semibold">Responsible Person(s)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Develop messaging & visuals.</td>
+                                    <td class="py-3 px-4">Weeks 1--2</td>
+                                    <td class="py-3 px-4">Program coordinator, CDPH designers</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Pretesting with students</td>
+                                    <td class="py-3 px-4">Week 3</td>
+                                    <td class="py-3 px-4">Research team</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Finalize campaign materials</td>
+                                    <td class="py-3 px-4">Week 4</td>
+                                    <td class="py-3 px-4">Project staff</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Social media launch</td>
+                                    <td class="py-3 px-4">Week 5</td>
+                                    <td class="py-3 px-4">Communications team</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">School outreach & presentations</td>
+                                    <td class="py-3 px-4">Weeks 6--12</td>
+                                    <td class="py-3 px-4">CDPH educators</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Campus testing events</td>
+                                    <td class="py-3 px-4">Monthly</td>
+                                    <td class="py-3 px-4">Schools + CDPH mobile unit</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Midpoint evaluation</td>
+                                    <td class="py-3 px-4">Month 6</td>
+                                    <td class="py-3 px-4">Evaluation specialist</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Final evaluation & reporting</td>
+                                    <td class="py-3 px-4">Month 12</td>
+                                    <td class="py-3 px-4">PI + CDPH</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Mobile Cards -->
+                    <div class="md:hidden space-y-4">
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Develop messaging & visuals.</p>
+                            <p><strong>Timeline:</strong> Weeks 1--2</p>
+                            <p><strong>Responsible:</strong> Program coordinator, CDPH designers</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Pretesting with students</p>
+                            <p><strong>Timeline:</strong> Week 3</p>
+                            <p><strong>Responsible:</strong> Research team</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Finalize campaign materials</p>
+                            <p><strong>Timeline:</strong> Week 4</p>
+                            <p><strong>Responsible:</strong> Project staff</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Social media launch</p>
+                            <p><strong>Timeline:</strong> Week 5</p>
+                            <p><strong>Responsible:</strong> Communications team</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">School outreach & presentations</p>
+                            <p><strong>Timeline:</strong> Weeks 6--12</p>
+                            <p><strong>Responsible:</strong> CDPH educators</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Campus testing events</p>
+                            <p><strong>Timeline:</strong> Monthly</p>
+                            <p><strong>Responsible:</strong> Schools + CDPH mobile unit</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Midpoint evaluation</p>
+                            <p><strong>Timeline:</strong> Month 6</p>
+                            <p><strong>Responsible:</strong> Evaluation specialist</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Final evaluation & reporting</p>
+                            <p><strong>Timeline:</strong> Month 12</p>
+                            <p><strong>Responsible:</strong> PI + CDPH</p>
+                        </div>
+                    </div>
+                    <p class="text-center italic text-gray-600 mt-2">Table 1: Timetable & Tasks</p>
+                </section>
+
+                <!-- Budget -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">14. Budget</h2>
+                    
+                    <!-- Desktop Table -->
+                    <div class="hidden md:block overflow-x-auto table-container">
+                        <table class="min-w-full">
+                            <thead>
+                                <tr class="table-header bg-teal-700">
+                                    <th class="py-3 px-4 text-left font-semibold">Item</th>
+                                    <th class="py-3 px-4 text-left font-semibold">Cost</th>
+                                    <th class="py-3 px-4 text-left font-semibold">Justification</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Social media content creation</td>
+                                    <td class="py-3 px-4">$3,000</td>
+                                    <td class="py-3 px-4">Covers professional editing, youth-focused video production, animations, captions, and culturally tailored graphics for TikTok/Instagram.</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Printing materials</td>
+                                    <td class="py-3 px-4">$1,200</td>
+                                    <td class="py-3 px-4">Includes posters, flyers, brochures, and QR code cards for distribution across schools, community centers, buses, and youth clubs.</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Staff/educator stipends</td>
+                                    <td class="py-3 px-4">$8,000</td>
+                                    <td class="py-3 px-4">Compensation for CDPH educators delivering workshops, training peer ambassadors, and maintaining school partnerships.</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Peer ambassador incentives</td>
+                                    <td class="py-3 px-4">$1,500</td>
+                                    <td class="py-3 px-4">Gift cards or small incentives to encourage youth participation in outreach and peer-led sharing.</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Testing event logistics</td>
+                                    <td class="py-3 px-4">$4,500</td>
+                                    <td class="py-3 px-4">Supports CDPH mobile unit transportation, setup, privacy materials, snacks for attendees, and educational handouts.</td>
+                                </tr>
+                                <tr class="table-row border-b">
+                                    <td class="py-3 px-4">Evaluation tools</td>
+                                    <td class="py-3 px-4">$2,000</td>
+                                    <td class="py-3 px-4">Covers online survey platforms, pre-/post-testing instruments, data analysis support, and reporting materials.</td>
+                                </tr>
+                                <tr class="font-bold">
+                                    <td class="py-3 px-4">Total Estimated Budget</td>
+                                    <td class="py-3 px-4">$20,200</td>
+                                    <td class="py-3 px-4">Comprehensive 12-month outreach, education, and evaluation plan.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Mobile Cards -->
+                    <div class="md:hidden space-y-4">
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Social media content creation</p>
+                            <p><strong>Cost:</strong> $3,000</p>
+                            <p><strong>Justification:</strong> Covers professional editing, youth-focused video production, animations, captions, and culturally tailored graphics for TikTok/Instagram.</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Printing materials</p>
+                            <p><strong>Cost:</strong> $1,200</p>
+                            <p><strong>Justification:</strong> Includes posters, flyers, brochures, and QR code cards for distribution across schools, community centers, buses, and youth clubs.</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Staff/educator stipends</p>
+                            <p><strong>Cost:</strong> $8,000</p>
+                            <p><strong>Justification:</strong> Compensation for CDPH educators delivering workshops, training peer ambassadors, and maintaining school partnerships.</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Peer ambassador incentives</p>
+                            <p><strong>Cost:</strong> $1,500</p>
+                            <p><strong>Justification:</strong> Gift cards or small incentives to encourage youth participation in outreach and peer-led sharing.</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Testing event logistics</p>
+                            <p><strong>Cost:</strong> $4,500</p>
+                            <p><strong>Justification:</strong> Supports CDPH mobile unit transportation, setup, privacy materials, snacks for attendees, and educational handouts.</p>
+                        </div>
+                        <div class="p-4 bg-white shadow rounded-xl border border-teal-100">
+                            <p class="font-semibold text-teal-700">Evaluation tools</p>
+                            <p><strong>Cost:</strong> $2,000</p>
+                            <p><strong>Justification:</strong> Covers online survey platforms, pre-/post-testing instruments, data analysis support, and reporting materials.</p>
+                        </div>
+                        <div class="p-4 bg-teal-50 shadow-inner rounded-xl border border-teal-200">
+                            <p class="font-bold text-lg">Total Estimated Budget</p>
+                            <p class="text-teal-800 font-semibold">$20,200</p>
+                            <p>Comprehensive 12-month outreach, education, and evaluation plan.</p>
+                        </div>
+                    </div>
+                    <p class="text-center italic text-gray-600 mt-2">Table 2: Estimated 1-Year Program Budget</p>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold mb-4 text-teal-700">Resources Required, Needed, and Available (with Sources)</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 text-gray-700">1. Personnel</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>Required:</strong> Trained health educators, program coordinators, and peer ambassadors to implement workshops, coordinate testing events, manage communications, and monitor youth engagement.</li>
+                                <li><strong>Available:</strong> Chicago Department of Public Health (CDPH) staff will provide experienced HIV educators and program managers. Peer ambassadors will be recruited from participating high schools and colleges.</li>
+                                <li><strong>Sources:</strong> CDPH HIV/STI Prevention Program, school health clubs, student volunteer organizations.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 text-gray-700">2. Testing Equipment and Supplies</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>Required:</strong> HIV rapid test kits, gloves, sanitizer, sharps disposal containers, privacy screens, and mobile testing unit setup materials (tents, tables, chairs).</li>
+                                <li><strong>Available:</strong> CDPH provides rapid HIV test kits, clinical staff, and basic mobile unit supplies. Schools provide indoor/outdoor spaces for event setup.</li>
+                                <li><strong>Sources:</strong> CDPH mobile unit inventory, partner school facilities.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 text-gray-700">3. Educational and Promotional Materials</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>Required:</strong> Printed brochures, posters, banners, QR-coded cards linking to testing locations, and digital visuals for social media campaigns.</li>
+                                <li><strong>Available:</strong> CDPH provides standardized educational brochures; free online platforms (Canva, Adobe Express) will support design. Schools provide display areas and bulletin boards for printed materials.</li>
+                                <li><strong>Sources:</strong> CDPH educational resources, school facilities, and online content creation platforms.</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-2 text-gray-700">4. Technology and Communication Tools</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>Required:</strong> Laptops, projectors, microphones, cameras for social media content creation, access to TikTok, Instagram, and YouTube accounts, and online survey platforms for evaluation.</li>
+                                <li><strong>Available:</strong> Program staff and CDPH offices supply laptops and projectors; schools provide access to classroom AV equipment; free or subscription-based online platforms will be used for social media campaigns.</li>
+                                <li><strong>Sources:</strong> CDPH IT resources, school technology departments, Canva/TikTok/Instagram platforms, SurveyMonkey/Qualtrics for surveys.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold mb-4 text-teal-700">Personnel, Equipment, Supplies, Transportation, Subcontracts</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 text-gray-700">1. Personnel</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>Program Staff & Educators:</strong> Includes CDPH health educators, program coordinators, and administrative staff responsible for planning, implementing, and evaluating workshops and outreach activities. They manage partnerships with schools, coordinate peer ambassadors, and oversee monthly testing events.</li>
+                                <li><strong>Peer Ambassadors:</strong> High school and college students recruited to serve as peer educators and social media advocates, promoting HIV testing among their peers. They assist with content dissemination, peer engagement, and event promotion.</li>
+                                <li><strong>Evaluation Team:</strong> Staff responsible for designing pre-/post-surveys, monitoring engagement, analyzing data, and preparing reports on program outcomes and impact.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 text-gray-700">2. Equipment</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>Digital Devices:</strong> Laptops, projectors, microphones, cameras, and smartphones are needed to produce, edit, and present educational content both in-person and online.</li>
+                                <li><strong>Mobile Testing Setup:</strong> Tents, tables, chairs, privacy screens, and signage for on-campus or community testing events.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 text-gray-700">3. Supplies</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>HIV Testing Supplies:</strong> Rapid HIV test kits, gloves, sanitizer, sharps disposal containers, and handouts.</li>
+                                <li><strong>Educational & Promotional Materials:</strong> Posters, brochures, flyers, QR-coded cards, banners, and other printed materials distributed across schools, youth centers, and public areas.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-2 text-gray-700">4. Transportation</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>CDPH Mobile Testing Unit:</strong> Fuel, maintenance, and vehicle use to transport staff, supplies, and testing equipment to schools and community events.</li>
+                                <li><strong>Staff Travel:</strong> Reimbursement for program staff or peer ambassadors traveling to schools, community sites, or meetings related to program implementation.</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-2 text-gray-700">5. Subcontracts</h4>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                                <li><strong>Media Content Creation:</strong> Contracts with designers or videographers to produce high-quality social media content (TikTok, Instagram Reels, YouTube Shorts) tailored to youth preferences.</li>
+                                <li><strong>Printing Services:</strong> External vendors may be used for bulk printing of brochures, posters, banners, and flyers for outreach and testing events.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Issues of Concern -->
+                <section class="mb-8">
+                    <h2 class="md:text-xl text-md font-bold text-teal-800 mb-4">15. Issues of Concern / Potential Problems</h2>
+                    <ol class="list-decimal pl-6 space-y-3 text-gray-700">
+                        <li><strong>Scheduling Conflicts</strong><br>Participation in workshops or testing events may be constrained by school events, exams, or holidays, or even sports schedules. Early coordination with administrators will be required, as well as flexibility.</li>
+                        <li><strong>Policy Barriers</strong><br>HIV related programming might need parental approval in some schools, or sexual health issues may be limited in schools based on local policies or local administrator preference.</li>
+                        <li><strong>Issues of Stigma and Cultural Sensitivity.</strong><br>In most societies, HIV-related stigma is still very pronounced, especially among youths of color and immigrant families. Stigma could decrease the readiness to participate in events or to use materials.</li>
+                        <li><strong>Administrative Approval Delays.</strong><br>Schools have to accept the approval of the presence of CDPH teachers and mobile testing units. Delay due to bureaucracy may impact timelines, start dates, or program momentum.</li>
+                        <li><strong>Privacy and Confidentiality Issues.</strong><br>Young people can fear their visibility when entering a testing field or addressing the health workers. It is essential to ensure confidential procedures and secret environments.</li>
+                        <li><strong>Limited Staff Availability</strong><br>Staffing may be low and/or staff may be ill or have conflicting commitments, thus interfering with the effectiveness of regular testing events in CDPH.</li>
+                        <li><strong>Technology Access Issues</strong><br>Students are not necessarily accessing the same social media platforms or have equivalent access to devices, which can limit the reach of digital campaigns.</li>
+                    </ol>
+                </section>
+
+                <!-- Evaluation Strategies -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-bold text-teal-800 mb-4">16. Evaluation Strategies</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-3 text-teal-700">A. Formative Evaluation</h3>
+                        <p class="mb-3 text-gray-700">The following strategies take place during and before program development to make sure that materials are accommodative:</p>
+                        
+                        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                            <li><strong>Pretesting Messages on the Youth</strong><br>Carry out focus groups and short surveys with a small sample of students to test wording, visuals, cultural sensitivity, and message credibility.</li>
+                            <li><strong>Pre-Launch Social Media Trials</strong><br>To gauge early engagement (views, likes, shares), a limited number of posts on TikTok and Instagram will be issued before the complete rollout.</li>
+                            <li><strong>CDPH and School Staff Feedback</strong><br>Materials will be reviewed by education experts and school nurses so that they can be health literate and appropriate in the school setting.</li>
+                            <li><strong>Pre-Launch Social Media Trials</strong><br>Observe one workshop in a chosen school to confirm the clarity, the involvement of students, and the logistical problems, and then proceed to all the sites.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-3 text-teal-700">B. Process Evaluation</h3>
+                        <p class="mb-3 text-gray-700">The following strategies track program implementation:</p>
+                        
+                        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                            <li><strong>Tracking Social Media Metrics</strong><br>Track views, shares, comments, likes, and hashtag activity to find out how the message reached and came across.</li>
+                            <li><strong>Monitoring Participation Numbers</strong><br>Document attendance recorded at each workshop, school presentation, and assessment of the success of outreach through testing.</li>
+                            <li><strong>Documenting Partnerships</strong><br>Monitor the involvement of schools, youth groups, and other community organisations.</li>
+                            <li><strong>Implementation Checklists</strong><br>Monthly checklists filled by the staff of the CDPH will contain the information about whether or not the tasks (content posting, testing events, workshops) were fulfilled on time.</li>
+                            <li><strong>Ongoing Youth Feedback</strong><br>Peer ambassadors will also report monthly about how students are responding to the campaign and give suggestions to improve it.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3 text-teal-700">C. Summative Evaluation</h3>
+                        <p class="mb-3 text-gray-700">Evaluates the effect and the results following the program.</p>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-medium mb-2 text-gray-700">Short-Term Effects (Outcome Evaluation)</h4>
+                            <ol class="list-decimal pl-6 space-y-1 text-gray-700">
+                                <li>Compare before and after interventions surveys to evaluate changes in:
+                                    <ul class="list-disc pl-6 mt-1">
+                                        <li>HIV knowledge</li>
+                                        <li>Knowledge of local testing places.</li>
+                                        <li>Perceptions of risk</li>
+                                        <li>Stigma levels</li>
+                                        <li>Belief in the availability of testing services.</li>
+                                    </ul>
+                                </li>
+                                <li>Determine whether youth express more intentions to get tested following program messages.</li>
+                            </ol>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-2 text-gray-700">Impact Evaluation (Long-term Effects)</h4>
+                            <ol class="list-decimal pl-6 space-y-1 text-gray-700">
+                                <li>Increases in real with actual HIV testing uptake with the CDPH clinic record, school testing event record, and the mobile unit statistics.</li>
+                                <li>Determine whether there was an increase in earlier HIV diagnosis as compared to the preceding year.</li>
+                                <li>Assessed the program decreased disparity in testing by racial and ethnic subgroups.</li>
+                                <li>Identify the existence of sustained relationships between schools and CDPH as a result of the program.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- References -->
+               <section class="mb-8">
+    <h2 class="text-xl font-bold text-teal-800 mb-4">References</h2>
+    <ol class="list-decimal pl-6 space-y-3 text-gray-700">
+        <li>
+            Centers for Disease Control and Prevention. (2023). HIV and youth. U.S. Department of Health & Human Services. 
+            <a href="https://www.cdc.gov/hiv/group/age/youth/" class="reference-link break-words">https://www.cdc.gov/hiv/group/age/youth/</a>
+        </li>
+        <li>
+            Glick, S. N., Morris, M., Foxman, B., Aral, S. O., Manhart, L. E., Holmes, K. K., & Golden, M. R. (2020). A behavioral intervention to promote HIV testing among young adults: A randomized controlled trial. American Journal of Public Health, 110(1), 96--103. 
+            <a href="https://doi.org/10.2105/AJPH.2019.305395" class="reference-link break-words">https://doi.org/10.2105/AJPH.2019.305395</a>
+        </li>
+        <li>
+            National Cancer Institute. (2002). Making health communication programs work (The Pink Book). U.S. Department of Health & Human Services.
+        </li>
+    </ol>
+</section>
+
+            </div>
+        </div>
+    </main>
+
+  <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">YouthHIVAware</h3>
+            <p class="text-gray-400">
+              Assessing HIV Status Among High School and College Students in
+              Relation to HIV Prevention.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/index.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/purpose.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Our Purpose</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/partner.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Our Partners</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/resume2.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Resume</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="text-gray-400 hover:text-teal-300 transition"
+                  >Contact</a
+                >
+              </li>
+              
+             
+
+              <!-- Resources Dropdown -->
+              <li class="relative">
+                <button
+                  id="footer-resources-btn"
+                  class="w-[56px] text-left text-gray-400 hover:text-teal-300 transition flex justify-between items-center"
+                >
+                  Resources
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+                <ul
+                  id="footer-resources-dropdown"
+                  class="ml-4 mt-2 space-y-2 hidden"
+                >
+                  
+                  <li>
+                    <a
+                    href="/Literature%20Review.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Literature Review</a
+                    >
+                  </li>
+                   <li>
+                    <a
+                      href="/Public%20Service%20Announcement.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Public Service Announcement</a
+                    >
+                  </li>
+                   <li>
+                    <a
+                      href="/News%20Release.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >News Release</a
+                    >
+                  <li>
+                      
+                  <li>
+                    <a
+                      href="/Brochure%20with%20Pretest%20Results.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Brochure with Pretest Results</a
+                    >
+                  </li>
+                    <a
+                      href="/MarketingPlan.html"
+                      class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                      >Marketing plan</a
+                    >
+                  </li>
+                  <li>
+                      <a
+                        href="/Intervention-Program.html"
+                        class="block py-1 px-2 rounded hover:bg-gray-700 transition"
+                        >Intervention-Program-Plan</a
+                      >
+                
+                 
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Morton Grove, IL 60053</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3"></i>
+                <span>+1 (773) 739-7989</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>unsebashoaib.11@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 YouthHIVAware. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-resources-btn").onclick = () => {
+        const dropdown = document.getElementById("footer-resources-dropdown");
+        dropdown.classList.toggle("hidden");
+      };
+    </script>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("-translate-x-full");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("-translate-x-full");
+      });
+    </script>
+</body>
+</html>
